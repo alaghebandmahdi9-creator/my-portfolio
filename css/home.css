@@ -1363,6 +1363,33 @@ html[lang="en"] .footer__logo {
 .footer__legal a:hover {
   color: var(--color-primary);
 }
+.footer__socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+  overflow: visible;
+}
+
+.footer__social {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  overflow: visible;
+}
+
+.footer__social img {
+  display: block;
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  /* اگر آیکون‌ها مشکی هستند و روی فوتر تیره دیده نمی‌شوند، خط زیر را فعال کن: */
+  filter: brightness(0) invert(1);
+}
 
 /* Footer Responsive */
 
