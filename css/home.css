@@ -1200,15 +1200,16 @@ html[lang="en"] .scroll-indicator {
 
 .footer {
   position: relative;
-  left: 50%;
-  right: 50%;
-  width: 100vw;
-  margin-left: -50vw;
-  margin-right: -50vw;
+  left: auto;
+  right: auto;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
   padding-top: 70px;
   padding-bottom: 0;
   background-color: var(--color-bg-dark);
   color: var(--color-text-white);
+  overflow: visible;
 }
 
 .footer__inner {
@@ -1363,6 +1364,7 @@ html[lang="en"] .footer__logo {
 .footer__legal a:hover {
   color: var(--color-primary);
 }
+
 .footer__socials {
   display: flex;
   flex-direction: row;
@@ -1378,7 +1380,6 @@ html[lang="en"] .footer__logo {
   justify-content: center;
   width: 40px;
   height: 40px;
-  flex-shrink: 0;
   overflow: visible;
 }
 
@@ -1387,8 +1388,7 @@ html[lang="en"] .footer__logo {
   width: 28px;
   height: 28px;
   object-fit: contain;
-  /* اگر آیکون‌ها مشکی هستند و روی فوتر تیره دیده نمی‌شوند، خط زیر را فعال کن: */
-  filter: brightness(0) invert(1);
+  filter: none;
 }
 
 /* Footer Responsive */
