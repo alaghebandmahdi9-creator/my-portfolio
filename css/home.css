@@ -1200,16 +1200,15 @@ html[lang="en"] .scroll-indicator {
 
 .footer {
   position: relative;
-  left: auto;
-  right: auto;
-  width: 100%;
-  margin-left: 0;
-  margin-right: 0;
+  left: 50%;
+  right: 50%;
+  width: 100vw;
+  margin-left: -50vw;
+  margin-right: -50vw;
   padding-top: 70px;
   padding-bottom: 0;
   background-color: var(--color-bg-dark);
   color: var(--color-text-white);
-  overflow: visible;
 }
 
 .footer__inner {
@@ -1365,31 +1364,6 @@ html[lang="en"] .footer__logo {
   color: var(--color-primary);
 }
 
-.footer__socials {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 12px;
-  margin-top: 16px;
-  overflow: visible;
-}
-
-.footer__social {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  overflow: visible;
-}
-
-.footer__social img {
-  display: block;
-  width: 28px;
-  height: 28px;
-  object-fit: contain;
-  filter: none;
-}
 
 /* Footer Responsive */
 
@@ -1412,6 +1386,7 @@ html[lang="en"] .footer__logo {
   .footer__contact {
     align-items: center;
   }
+
 }
 
 @media (max-width: 640px) {
