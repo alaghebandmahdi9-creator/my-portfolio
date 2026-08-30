@@ -1200,15 +1200,15 @@ html[lang="en"] .scroll-indicator {
 
 .footer {
   position: relative;
-  left: auto;
-  right: auto;
-  width: 100%;
-  margin-left: 0;
-  margin-right: 0;
+  left: 50%;
+  right: 50%;
+  width: 100vw;
+  margin-left: -50vw;
+  margin-right: -50vw;
   padding-top: 70px;
+  padding-bottom: 0;
   background-color: var(--color-bg-dark);
   color: var(--color-text-white);
-  overflow: visible;
 }
 
 .footer__inner {
@@ -1320,38 +1320,31 @@ html[lang="en"] .footer__logo {
 /* Footer Socials */
 
 .footer__socials {
-  display: flex !important;
+  display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
-  gap: 12px;
+  gap: 15px;
   margin-top: 16px;
-  overflow: visible !important;
-  opacity: 1 !important;
-  visibility: visible !important;
-  z-index: 5;
-  position: relative;
+  padding-inline-end: 1px;
 }
 
 .footer__social {
-  display: inline-flex !important;
+  display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
-  overflow: visible !important;
-  opacity: 1 !important;
-  visibility: visible !important;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
 }
 
 .footer__social img {
-  display: block !important;
-  width: 28px;
-  height: 28px;
+  display: block;
+  width: 50px;
+  height: 50px;
   object-fit: contain;
-  opacity: 1 !important;
-  visibility: visible !important;
-  filter: none !important;
 }
 
 .footer__social:hover {
@@ -1370,6 +1363,7 @@ html[lang="en"] .footer__logo {
 .footer__legal a:hover {
   color: var(--color-primary);
 }
+
 
 /* Footer Responsive */
 
@@ -1392,6 +1386,7 @@ html[lang="en"] .footer__logo {
   .footer__contact {
     align-items: center;
   }
+
 }
 
 @media (max-width: 640px) {
