@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mahdi Alagheband | Graphic Designer</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Design system + main page styles -->
+    <link rel="stylesheet" href="css/design-system.css" />
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body>
+    <div class="scroll-indicator">
+      <div class="line-track">
+        <div class="line-fill"></div>
+      </div>
+      <span class="scroll-label">Scroll</span>
+    </div>
+    <!-- ========== Header ========== -->
+    <header class="header">
+      <div class="container header__inner">
+        <!-- Hamburger (mobile only) -->
+        <button class="header__hamburger" id="hamburgerBtn" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- Logo -->
+        <a href="home-en.html" class="header__logo">
+          <img src="images/logo.png" alt="Mahdi Alagheband Logo" />
+        </a>
+
+        <!-- Navigation -->
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li><a href="home-en.html" class="header__link active">Home</a></li>
+            <li><a href="about-en.html" class="header__link">About Me</a></li>
+            <li><a href="works-en.html" class="header__link">Works</a></li>
+            <li><a href="contact-en.html" class="header__link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Button + language -->
+        <div class="header__actions">
+          <a href="hire-en.html" class="btn btn-primary header__btn">Hire Me</a>
+          <div class="header__lang">
+            <button class="lang-btn" id="langBtn" type="button">
+              FA
+              <span class="lang-btn__arrow">▾</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ========== Mobile menu ========== -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu__overlay" id="mobileOverlay"></div>
+      <div class="mobile-menu__panel">
+        <ul class="mobile-menu__list">
+          <li><a href="home-en.html" class="mobile-menu__link">Home</a></li>
+          <li>
+            <a href="about-en.html" class="mobile-menu__link">About Me</a>
+          </li>
+          <li><a href="works-en.html " class="mobile-menu__link">Works</a></li>
+          <li>
+            <a href="contact-en.html" class="mobile-menu__link">Contact</a>
+          </li>
+        </ul>
+        <div class="mobile-menu__actions">
+          <a href="hire-en.html" class="btn btn-primary">Hire Me</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== Hero ========== -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__subtitle">
+            I am Mahdi Alagheband, a graphic designer
+            <span class="hero__stars">✦ ✦</span>
+          </p>
+
+          <h1 class="hero__title">
+            Purposeful Design for<br />
+            <span class="text-gold">Enduring Brands</span>
+          </h1>
+
+          <p class="hero__description">
+            I specialize in logo design, visual identity, posters, and magazine
+            layouts, helping brands communicate their message with clarity,
+            creativity, and impact.
+          </p>
+
+          <a href="works-en.html" class="btn btn-outline hero__btn"
+            >View Works</a
+          >
+        </div>
+
+        <div class="hero__decor">
+          <div class="hero__arcs hero__arcs--left">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="hero__dots">
+            <div class="dots-row dots-row--1">
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="dots-row dots-row--2">
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="dots-row dots-row--3">
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="dots-row dots-row--4">
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="dots-row dots-row--5">
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+
+          <div class="hero__arcs hero__arcs--right">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <p class="hero__based">based in everywhere</p>
+      </div>
+    </section>
+
+    <!-- ========== My Services ========== -->
+    <section class="services section-light">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">My Services</h2>
+          <p class="section-subtitle">
+            Creative solutions for your brand growth
+          </p>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="services__grid">
+          <div class="card card-service">
+            <div class="service-icon">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#E1B943"
+                stroke-width="1.5"
+              >
+                <rect x="4" y="3" width="16" height="18" rx="2" />
+                <path d="M8 7h8M8 11h8M8 15h5" />
+              </svg>
+            </div>
+            <h3 class="service-title">Visual Identity Design</h3>
+            <ul class="service-list">
+              <li>Logo</li>
+              <li>Brand Identity</li>
+              <li>Brochure</li>
+            </ul>
+          </div>
+
+          <div class="card card-service">
+            <div class="service-icon">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#E1B943"
+                stroke-width="1.5"
+              >
+                <rect x="2" y="4" width="20" height="14" rx="2" />
+                <path d="M8 20h8" />
+              </svg>
+            </div>
+            <h3 class="service-title">Digital Design</h3>
+            <ul class="service-list">
+              <li>UI/UX</li>
+              <li>Banner</li>
+              <li>Poster</li>
+            </ul>
+          </div>
+
+          <div class="card card-service">
+            <div class="service-icon">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#E1B943"
+                stroke-width="1.5"
+              >
+                <path d="M6 3h12v18H6z" />
+                <path d="M9 7h6M9 11h6M9 15h4" />
+              </svg>
+            </div>
+            <h3 class="service-title">Print Design</h3>
+            <ul class="service-list">
+              <li>Book</li>
+              <li>Magazine</li>
+              <li>Typography</li>
+              <li>Page Layout</li>
+            </ul>
+          </div>
+
+          <div class="card card-service">
+            <div class="service-icon">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#E1B943"
+                stroke-width="1.5"
+              >
+                <rect x="3" y="3" width="7" height="7" rx="1" />
+                <rect x="14" y="3" width="7" height="7" rx="1" />
+                <rect x="3" y="14" width="7" height="7" rx="1" />
+                <rect x="14" y="14" width="7" height="7" rx="1" />
+              </svg>
+            </div>
+            <h3 class="service-title">Other Services</h3>
+            <ul class="service-list">
+              <li>Illustration</li>
+              <li>Design Consulting</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Selected Works ========== -->
+    <section class="works section-light">
+      <div class="container">
+        <div class="section-header works-header">
+          <div class="works-header__right">
+            <a href="#" class="works-link">View All Works →</a>
+          </div>
+          <div class="works-header__center">
+            <h2 class="section-title">Selected Works</h2>
+            <div class="section-line"></div>
+          </div>
+        </div>
+
+        <div class="works__grid">
+          <a href="project-aftab-en.html?from=home" class="works-item-link">
+            <article class="card card-work">
+              <div class="card-work__image">
+                <img
+                  src="images/work-1.jpg"
+                  alt="Aftab Logo"
+                  class="work-image"
+                />
+                <div class="work"></div>
+              </div>
+              <div class="card-work__label">
+                <span class="work-category">Logo</span>
+                <span class="work-name">Aftab</span>
+                <span class="work-link">View Project →</span>
+              </div>
+            </article>
+          </a>
+          <a href="project-chobkadeh-en.html?from=home" class="works-item-link">
+            <article class="card card-work">
+              <div class="card-work__image">
+                <img
+                  src="images/work-2.jpg"
+                  alt="Choobkadeh Logo"
+                  class="work-image"
+                />
+                <div class="work"></div>
+              </div>
+              <div class="card-work__label">
+                <span class="work-category">Logo</span>
+                <span class="work-name">Choobkadeh</span>
+                <span class="work-link">View Project →</span>
+              </div>
+            </article>
+          </a>
+          <a href="project-daruit-en.html?from=home" class="works-item-link">
+            <article class="card card-work">
+              <div class="card-work__image">
+                <img
+                  src="images/work-3.jpg"
+                  alt="Daruit Illustration"
+                  class="work-image"
+                />
+
+                <div class="work"></div>
+              </div>
+              <div class="card-work__label">
+                <span class="work-category">Illustration</span>
+                <span class="work-name">Daruit</span>
+                <span class="work-link">View Project →</span>
+              </div>
+            </article>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Footer ========== -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <img src="images/logo.png" alt="Logo" class="footer__logo" />
+          <div class="footer__brand-text">
+            <h3 class="footer__name">Mahdi Alagheband</h3>
+            <p class="footer__role">UI/UX & Logo Designer</p>
+          </div>
+        </div>
+
+        <div class="footer__cta">
+          <p class="footer__cta-text">
+            For new projects or team and freelance<br />
+            collaborations, get in touch<br />
+            with me.
+          </p>
+          <a href="hire-en.html" class="btn btn-primary footer__btn">Hire Me</a>
+        </div>
+
+        <div class="footer__contact">
+          <a
+            href="mailto:alaghebandmahdi9@gmail.com"
+            class="footer__contact-item"
+          >
+            <span>alaghebandmahdi9@gmail.com</span>
+            <span class="footer__icon">✉</span>
+          </a>
+          <a href="tel:+989120758032" class="footer__contact-item">
+            <span>+989120758032</span>
+            <span class="footer__icon">☎</span>
+          </a>
+          <div class="footer__contact-item">
+            <span>Tehran, Iran</span>
+            <span class="footer__icon"> 📍</span>
+          </div>
+          <div class="footer__socials">
+            <a
+              href="https://instagram.com/mahdialagheband"
+              class="footer__social"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <img src="images/icon-instagram-footer.png" alt="Instagram" />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/mahdi-alagheband-359581420"
+              class="footer__social"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <img src="images/icon-linkedin-footer.png" alt="LinkedIn" />
+            </a>
+            <a
+              href="https://dribbble.com/mahdi-alagheband"
+              class="footer__social"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Dribbble"
+            >
+              <img src="images/icon-dribbble-footer.png" alt="Dribbble" />
+            </a>
+            <a
+              href="https://www.behance.net/mahdialagheband"
+              class="footer__social"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Behance"
+            >
+              <img src="images/icon-behance-footer.png" alt="Behance" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="container footer__bottom-inner">
+          <div class="footer__legal">
+            <a href="privacy-en.html">Privacy Policy</a>
+            <span> | </span>
+            <a href="terms-en.html">Terms and Conditions</a>
+          </div>
+          <p class="footer__copy">© 2026. All rights reserved.</p>
+          <p class="footer__rights">
+            Designed and built with ❤️ by Mahdi Alagheband
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/home.js"></script>
+  </body>
+</html>

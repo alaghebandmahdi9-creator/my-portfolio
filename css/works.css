@@ -1,0 +1,273 @@
+/* ----------------------------------------
+   انیمیشن ورود هیرو نمونه کارها
+---------------------------------------- */
+.page-works .about-hero__title-block,
+.page-works .about-hero__graphic {
+  opacity: 0;
+}
+
+/* عنوان از پایین محو می‌شود */
+.page-works .about-hero__title-block {
+  transform: translateY(28px);
+  animation: worksHeroFadeUp 0.75s ease forwards;
+  animation-delay: 0.15s;
+}
+
+/* عکس گرافیکی کمی از کنار + محو */
+.page-works .about-hero__graphic {
+  transform: translateY(20px) scale(0.96);
+  animation: worksHeroGraphicIn 0.85s ease forwards;
+  animation-delay: 0.35s;
+}
+.scroll-indicator {
+  position: absolute;
+  bottom: 100px;
+  left: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+html[lang="en"] .scroll-indicator {
+  left: auto;
+  right: 2.5rem;
+}
+
+@keyframes worksHeroFadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes worksHeroGraphicIn {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* موبایل: بدون جابه‌جایی زیاد */
+@media (max-width: 900px) {
+  .page-works .about-hero__title-block,
+  .page-works .about-hero__graphic {
+    transform: translateY(16px);
+  }
+
+  .page-works .about-hero__graphic {
+    transform: translateY(16px) scale(0.98);
+  }
+}
+
+/* ----------------------------------------
+   فیلتر
+---------------------------------------- */
+.works-page {
+  padding: 50px 0 90px;
+  background: #fff;
+}
+
+.works-filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.works-filter__btn {
+  padding: 8px 18px;
+  border: 1.5px solid #1a1818;
+  border-radius: 6px;
+  background: #fff;
+  color: #1a1818;
+  font-size: 0.9rem;
+  font-family: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.works-filter__btn:hover,
+.works-filter__btn.is-active {
+  background-color: #1a1818;
+  color: #fff;
+}
+
+/* ----------------------------------------
+   گرید نزدیک به طرح
+---------------------------------------- */
+.works-masonry {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 200px;
+  grid-auto-flow: dense; /* جای خالی را پر می‌کند */
+  gap: 18px;
+}
+
+.works-item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #fff;
+}
+
+/* کارت‌های عریض / بلند با کلاس، نه شماره فرزند */
+.works-item.span-wide {
+  grid-column: span 2;
+}
+
+.works-item.span-tall {
+  grid-row: span 2;
+}
+
+.works-item.span-big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.works-item.is-hidden {
+  display: none !important;
+}
+
+.works-item .card-work__image {
+  position: relative;
+  flex: 1 1 auto; /* فقط فضای باقی‌مانده را می‌گیرد */
+  min-height: 0;
+  overflow: hidden;
+  border-radius: 16px 16px 0 0;
+  background: #d0d0d0;
+}
+
+.works-item .work-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.45s ease;
+}
+
+.works-item:hover .work-image {
+  transform: scale(1.04);
+}
+
+/* نوار رنگی فقط روی لبه بالا – از چپ پر می‌شود */
+.work-top-bar {
+  position: absolute;
+  top: 0;
+  right: 0; /* در RTL از راست شروع شود؛ برای LTR: left: 0; right: auto */
+  left: auto;
+  width: 0;
+  height: 4px; /* ضخامت استروک بالا */
+  z-index: 2;
+  transition: width 0.4s ease;
+  pointer-events: none;
+}
+
+.works-item:hover .work-top-bar {
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+
+/* رنگ‌ها – ۳ تا از درباره من + بقیه */
+.works-item[data-bar="gold"] .work-top-bar {
+  background: #e8c43a;
+} /* زرد درباره من */
+.works-item[data-bar="mint"] .work-top-bar {
+  background: #7fe0d0;
+} /* سبزآبی درباره من */
+.works-item[data-bar="purple"] .work-top-bar {
+  background: #c56bff;
+} /* بنفش درباره من */
+.works-item[data-bar="coral"] .work-top-bar {
+  background: #ff6b6b;
+}
+.works-item[data-bar="blue"] .work-top-bar {
+  background: #4d9de0;
+}
+.works-item[data-bar="orange"] .work-top-bar {
+  background: #f4a261;
+}
+.works-item[data-bar="teal"] .work-top-bar {
+  background: #2a9d8f;
+}
+.works-item[data-bar="pink"] .work-top-bar {
+  background: #e76f9b;
+}
+
+/* برچسب + مشاهده پروژه مثل صفحه اصلی */
+.works-item .card-work__label {
+  flex: 0 0 auto; /* ارتفاع ثابت محتوا – حذف نشود */
+  display: flex !important;
+  flex-direction: column;
+  gap: 4px;
+  padding: 4px 10px;
+  background: rgba(248, 247, 247, 0.95);
+  border-radius: 0 0 16px 16px;
+  visibility: visible;
+  opacity: 1;
+}
+.works-item .work-category,
+.works-item .work-name {
+  display: block;
+  color: #1a1818;
+}
+
+.works-item .work-link {
+  display: inline-block;
+  margin-top: 2px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #1a1818;
+  opacity: 0;
+  transform: translateY(4px);
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+.works-item:hover .work-link {
+  opacity: 1;
+  transform: translateY(0);
+}
+.works-item-link {
+  display: contents;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+@media (max-width: 900px) {
+  .works-masonry {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 180px;
+  }
+
+  .works-item.span-wide,
+  .works-item.span-big {
+    grid-column: span 2;
+  }
+
+  .works-item.span-tall {
+    grid-row: span 2;
+  }
+}
+
+@media (max-width: 640px) {
+  .works-masonry {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 220px;
+  }
+
+  .works-item.span-wide,
+  .works-item.span-tall,
+  .works-item.span-big {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}

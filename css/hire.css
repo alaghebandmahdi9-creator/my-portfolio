@@ -1,0 +1,1089 @@
+/* ========================================
+   HIRE PAGE — LIGHT HEADER
+======================================== */
+
+.page-hire .header--light {
+  background-color: #f5f5f5;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.page-hire .header--light .header__link {
+  color: #1a1818;
+}
+
+.page-hire .header--light .header__link:hover,
+.page-hire .header--light .header__link.active {
+  color: var(--color-primary);
+}
+
+.page-hire .header--light .header__link.active::after {
+  background-color: var(--color-primary);
+}
+
+.page-hire .header--light .lang-btn {
+  color: #1a1818;
+}
+
+.page-hire .header--light .header__hamburger span {
+  background-color: #1a1818;
+}
+
+/* ========================================
+   SCROLL INDICATOR
+======================================== */
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 170px;
+  left: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+html[lang="en"] .scroll-indicator {
+  right: 2.5rem;
+  left: auto;
+}
+
+/* ========================================
+   HIRE HERO
+======================================== */
+
+.hire-hero {
+  height: 500px;
+  max-height: 500px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #f5f5f5;
+}
+
+.hire-hero__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 500px;
+  gap: 40px;
+}
+
+/* Hero Content */
+
+.hire-hero__content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  transform: translate(-80px, 150px);
+}
+
+.hire-hero__title-block {
+  width: 100%;
+  text-align: right;
+}
+
+.hire-hero__title {
+  margin-bottom: 8px;
+  color: #1a1818;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.hire-hero__line {
+  width: 174px;
+  height: 2px;
+  margin: 0 0 8px auto;
+  background-color: #1a1818;
+}
+
+.hire-hero__breadcrumb {
+  color: #666;
+  font-size: 0.85rem;
+}
+
+.hire-hero__breadcrumb a {
+  color: #666;
+  transition: color 0.25s ease;
+}
+
+.hire-hero__breadcrumb a:hover {
+  color: var(--color-primary);
+}
+
+/* Hero Features */
+
+.hire-hero__features {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.hire-feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 120px;
+  gap: 8px;
+  text-align: center;
+  transform: translateY(80px);
+}
+
+.hire-feature__icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.hire-feature__text {
+  color: #1a1818;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+/* Hero Graphic */
+
+.hire-hero__graphic {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  transform: translate(-50px, -500px);
+}
+
+.hire-hero__graphic-img {
+  display: block;
+  width: 400px;
+  height: auto;
+  max-height: 280px;
+  object-fit: contain;
+}
+
+/* ========================================
+   HIRE HERO — MOBILE
+======================================== */
+
+@media (max-width: 900px) {
+  .hire-hero {
+    height: auto !important;
+    max-height: none !important;
+    padding: 24px 0 32px !important;
+    overflow: visible !important;
+  }
+
+  .hire-hero__inner {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    width: 100%;
+    max-width: 100%;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 16px;
+    gap: 20px !important;
+    box-sizing: border-box;
+    transform: none !important;
+  }
+
+  .hire-hero__content {
+    order: 2;
+    width: 100%;
+    max-width: 100%;
+    align-items: center !important;
+    gap: 16px !important;
+    transform: none !important;
+  }
+
+  .hire-hero__title-block {
+    width: 100%;
+    text-align: center !important;
+  }
+
+  .hire-hero__line {
+    margin: 0 auto 8px !important;
+  }
+
+  .hire-hero__features {
+    width: 100%;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 16px !important;
+    transform: translateY(80px) !important;
+  }
+
+  .hire-feature {
+    max-width: 140px;
+  }
+
+  .hire-hero__graphic {
+    order: 1;
+    width: 100%;
+    max-width: 100%;
+    height: auto !important;
+    justify-content: center !important;
+    transform: translateY(-80px) !important;
+  }
+
+  .hire-hero__graphic-img {
+    width: min(200px, 70vw) !important;
+    max-width: 100% !important;
+    height: auto !important;
+    max-height: 180px !important;
+    object-fit: contain;
+  }
+}
+
+/* ========================================
+   HEADER — ENTRY ANIMATION
+======================================== */
+
+/* Initial state */
+
+.header__logo,
+.header__link,
+.header__actions {
+  opacity: 0;
+}
+
+/* Menu links */
+
+.header__link {
+  transform: translateY(-40px);
+  animation: menuSlideDown 0.55s ease forwards;
+}
+
+.header__menu li:nth-child(1) .header__link {
+  animation-delay: 0.15s;
+}
+
+.header__menu li:nth-child(2) .header__link {
+  animation-delay: 0.3s;
+}
+
+.header__menu li:nth-child(3) .header__link {
+  animation-delay: 0.45s;
+}
+
+.header__menu li:nth-child(4) .header__link {
+  animation-delay: 0.6s;
+}
+
+/* Header actions */
+
+.header__actions {
+  transform: translateY(-20px);
+  animation: fadeUpHeader 0.5s ease forwards;
+  animation-delay: 0.85s;
+}
+
+/* Header logo */
+
+.header__logo {
+  animation: logoFadeIn 0.7s ease forwards;
+  animation-delay: 2s;
+}
+
+/* Header keyframes */
+
+@keyframes menuSlideDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUpHeader {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes logoFadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* ========================================
+   HIRE HERO — ENTRY ANIMATION
+======================================== */
+
+.hire-hero__title-block,
+.hire-hero__features,
+.hire-hero__graphic {
+  opacity: 0;
+}
+
+/* Title */
+
+.hire-hero__title-block {
+  transform: translateY(24px);
+  animation: hireFadeUp 0.7s ease forwards;
+  animation-delay: 0.2s;
+}
+
+/* Features */
+
+.hire-hero__features {
+  transform: translateY(24px);
+  animation: hireFadeUp 0.7s ease forwards;
+  animation-delay: 0.45s;
+}
+
+/* Graphic */
+
+.hire-hero__graphic {
+  transform: translate(30px, -80px) scale(0.92);
+  animation: hireGraphicIn 0.8s ease forwards;
+  animation-delay: 0.35s;
+}
+
+/* Hero keyframes */
+
+@keyframes hireFadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hireGraphicIn {
+  to {
+    opacity: 1;
+    transform: translate(-300px, -180px) scale(1);
+  }
+}
+
+/* ========================================
+   HIRE PROCESS
+======================================== */
+
+.hire-process {
+  padding: 70px 0 60px;
+  background-color: #ffffff;
+}
+
+.hire-process__header {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.hire-process__title {
+  margin-bottom: 10px;
+  color: #1a1818;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.hire-process__line {
+  width: 120px;
+  height: 2px;
+  margin: 0 auto;
+  background-color: rgba(204, 162, 63, 0.63);
+}
+
+.hire-process__steps {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+/* Process connector */
+
+.hire-process__steps::before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  right: 8%;
+  left: 8%;
+  z-index: 0;
+  height: 2px;
+  border-top: 2px dotted rgba(204, 162, 63, 0.63);
+}
+
+/* Process step */
+
+.hire-step {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  max-width: 180px;
+  text-align: center;
+}
+
+.hire-step__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 14px;
+  background: #fff;
+}
+
+.hire-step__icon img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.hire-step__title {
+  margin-bottom: 8px;
+  color: #1a1818;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.hire-step__text {
+  color: #555;
+  font-size: 0.8rem;
+  line-height: 1.7;
+}
+
+/* Process — mobile */
+
+@media (max-width: 640px) {
+  .hire-process__steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    gap: 82px;
+    overflow: visible;
+  }
+
+  .hire-process__steps::before {
+    display: none;
+  }
+
+  .hire-step {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 100%;
+    flex: none;
+    font-size: calc(1em + 5px);
+  }
+
+  .hire-step:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 130px;
+    bottom: -90px;
+    left: 50%;
+    z-index: 0;
+    width: 0;
+    border-left: 2px dotted rgba(204, 162, 63, 0.63);
+    transform: translateX(-50%);
+  }
+
+  .hire-step__icon {
+    position: relative;
+    z-index: 2;
+    background: #fff;
+  }
+}
+
+/* ========================================
+   HIRE FORM
+======================================== */
+
+.hire-form-section {
+  padding: 60px 0 80px;
+  background-color: #f5f5f5;
+}
+
+.hire-form__title {
+  margin-bottom: 40px;
+  color: #1a1818;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.hire-form {
+  max-width: 720px;
+  margin: 0 auto;
+  direction: rtl;
+}
+
+/* Form rows */
+
+.hire-form__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+/* Form group */
+
+.hire-form__group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.hire-form__group label {
+  color: #1a1818;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: right;
+}
+
+.hire-form__group label span {
+  color: #e74c3c;
+}
+
+/* Input wrapper */
+
+.hire-input-wrap {
+  position: relative;
+  width: 100%;
+}
+
+/* Shared form controls */
+
+.hire-input-wrap input,
+.hire-input-wrap select,
+.hire-input-wrap textarea {
+  width: 100%;
+  padding: 12px 14px;
+  padding-inline-end: 42px;
+  border: 1.5px solid #d0d0d0;
+  border-radius: 8px;
+  background: #fff;
+  color: #1a1818;
+  font-family: inherit;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.hire-input-wrap input:focus,
+.hire-input-wrap select:focus,
+.hire-input-wrap textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.12);
+}
+
+.hire-input-wrap input::placeholder,
+.hire-input-wrap textarea::placeholder {
+  color: #aaa;
+}
+
+/* Error icon */
+
+.hire-input-error-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #e53935;
+  border-radius: 50%;
+  background: #fff;
+  color: #e53935;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+
+/* Error text */
+
+.hire-input-error-text {
+  display: none;
+  min-height: 1.25em;
+  margin-top: 4px;
+  color: #e53935;
+  font-size: 0.8rem;
+  line-height: 1.25;
+  text-align: right;
+}
+
+/* Invalid state */
+
+.hire-form__group.is-invalid .hire-input-wrap input,
+.hire-form__group.is-invalid .hire-input-wrap select,
+.hire-form__group.is-invalid .hire-input-wrap textarea {
+  border-color: #e53935;
+}
+
+.hire-form__group.is-invalid .hire-input-error-icon {
+  display: flex;
+}
+
+.hire-form__group.is-invalid .hire-input-error-text {
+  display: block;
+}
+
+/* Full-width field */
+
+.hire-form__group--full {
+  grid-column: 1 / -1;
+  margin-bottom: 5px;
+}
+
+/* Submit button */
+
+.hire-form__submit {
+  display: block;
+  margin: 32px auto 0;
+  padding: 14px 48px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--color-primary, #f5a623);
+  color: #1a1818;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.25s ease,
+    transform 0.15s ease;
+}
+
+.hire-form__submit:hover {
+  background-color: #e09000;
+  transform: translateY(-1px);
+}
+
+.hire-form__submit:active {
+  transform: translateY(0);
+}
+
+/* ========================================
+   HIRE FORM — MOBILE
+======================================== */
+
+@media (max-width: 640px) {
+  .hire-form__row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .hire-form-section {
+    padding: 40px 0 60px;
+  }
+
+  .hire-form__title {
+    margin-bottom: 28px;
+    font-size: 1.3rem;
+  }
+}
+
+/* ========================================
+   HIRE FORM — LOADING STATE
+======================================== */
+
+.hire-form__submit.is-loading {
+  position: relative;
+  color: transparent !important;
+  pointer-events: none;
+  cursor: wait;
+}
+
+.hire-form__submit.is-loading::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 22px;
+  height: 22px;
+  margin: -11px 0 0 -11px;
+  border: 2.5px solid rgba(255, 255, 255, 0.35);
+  border-top-color: #1a1818;
+  border-radius: 50%;
+  animation: hireSpin 0.7s linear infinite;
+}
+
+@keyframes hireSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ========================================
+   SUCCESS MODAL
+======================================== */
+
+.success-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.success-modal.is-open {
+  display: flex;
+}
+
+.success-modal[hidden] {
+  display: none;
+}
+
+.success-modal.is-open[hidden] {
+  display: flex !important;
+}
+
+/* Modal overlay */
+
+.success-modal__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal box */
+
+.success-modal__box {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 320px;
+  padding: 32px 24px 28px;
+  border-radius: 16px;
+  background: #f3f3f3;
+  text-align: center;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Close button */
+
+.success-modal__close {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: transparent;
+  color: #1a1818;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.success-modal__close:hover {
+  opacity: 0.6;
+}
+
+/* Modal icon */
+
+.success-modal__icon {
+  width: 72px;
+  height: 72px;
+  margin: 8px auto 20px;
+}
+
+.success-modal__icon img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Modal text */
+
+.success-modal__text {
+  margin-bottom: 24px;
+  color: #1a1818;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+/* Modal button */
+
+.success-modal__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 120px;
+  padding: 10px 28px;
+  border: 2px solid #04bf26;
+  border-radius: 8px;
+  background-color: #04bf26;
+  color: #fff;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.success-modal__btn:hover {
+  border-color: #04bf26;
+  background-color: #fbfbfb;
+  color: #04bf26;
+}
+
+/* Error modal button */
+
+.error-modal__btn {
+  border-color: #ff0000;
+  background-color: #ff0000;
+  color: #fff;
+}
+
+.error-modal__btn:hover {
+  border-color: #ff0000;
+  background-color: #fbfbfb;
+  color: #ff0000;
+}
+
+/* ========================================
+   HIRE HERO — ENGLISH / LTR
+======================================== */
+
+html[lang="en"] .hire-hero {
+  height: 500px;
+  max-height: 500px;
+  padding: 0;
+  overflow: hidden;
+}
+
+html[lang="en"] .hire-hero__inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 500px;
+  margin: 0;
+  gap: 40px;
+  transform: none;
+}
+
+/* English hero content */
+
+html[lang="en"] .hire-hero__content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-width: 0;
+  gap: 20px;
+  order: 1;
+  transform: none;
+}
+
+html[lang="en"] .hire-hero__title-block {
+  width: 100%;
+  text-align: left;
+}
+
+html[lang="en"] .hire-hero__title {
+  margin-bottom: 8px;
+  color: #1a1818;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+html[lang="en"] .hire-hero__line {
+  width: 140px;
+  height: 2px;
+  margin: 0 0 8px 0;
+  background-color: #1a1818;
+}
+
+html[lang="en"] .hire-hero__breadcrumb {
+  color: #666;
+  font-size: 0.85rem;
+  text-align: left;
+}
+
+html[lang="en"] .hire-hero__features {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+  transform: none;
+}
+
+html[lang="en"] .hire-feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 130px;
+  gap: 8px;
+  text-align: center;
+}
+
+/* English hero graphic */
+
+html[lang="en"] .hire-hero__graphic {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  order: 2;
+  transform: none;
+}
+
+html[lang="en"] .hire-hero__graphic-img {
+  display: block;
+  width: 400px;
+  height: auto;
+  max-height: 280px;
+  object-fit: contain;
+  transform: translate(110px, 150px);
+}
+
+/* ========================================
+   HIRE HERO — ENGLISH MOBILE
+======================================== */
+
+@media (max-width: 900px) {
+  html[lang="en"] .hire-hero {
+    height: auto !important;
+    max-height: none !important;
+    padding: 24px 0 32px !important;
+    overflow: visible !important;
+  }
+
+  html[lang="en"] .hire-hero__inner {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 16px !important;
+    gap: 20px !important;
+    box-sizing: border-box !important;
+    transform: none !important;
+  }
+
+  html[lang="en"] .hire-hero__content {
+    order: 2 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    align-items: center !important;
+    gap: 16px !important;
+    transform: none !important;
+  }
+
+  html[lang="en"] .hire-hero__title-block {
+    width: 100% !important;
+    text-align: center !important;
+    transform: translateY(-150px) !important;
+  }
+
+  html[lang="en"] .hire-hero__line {
+    margin: 0 auto 8px !important;
+  }
+
+  html[lang="en"] .hire-hero__breadcrumb {
+    text-align: center !important;
+  }
+
+  html[lang="en"] .hire-hero__features {
+    width: 100% !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 16px !important;
+    transform: translateY(-60px) !important;
+  }
+
+  html[lang="en"] .hire-feature {
+    max-width: 140px !important;
+  }
+
+  html[lang="en"] .hire-hero__graphic {
+    order: 1 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    justify-content: center !important;
+    transform: translateY(-40px) !important;
+  }
+
+  html[lang="en"] .hire-hero__graphic-img {
+    width: min(200px, 70vw) !important;
+    max-width: 100% !important;
+    height: auto !important;
+    max-height: 180px !important;
+    object-fit: contain !important;
+    transform: translateY(150px) !important;
+  }
+}
+
+/* ========================================
+   HIRE FORM — ENGLISH / LTR
+======================================== */
+
+html[lang="en"] .hire-form__title {
+  text-align: center;
+}
+
+html[lang="en"] .hire-form__group label {
+  text-align: left;
+}
+
+html[lang="en"] .hire-form__group input,
+html[lang="en"] .hire-form__group select,
+html[lang="en"] .hire-form__group textarea,
+html[lang="en"] .hire-input-wrap input,
+html[lang="en"] .hire-input-wrap select,
+html[lang="en"] .hire-input-wrap textarea {
+  direction: ltr;
+  text-align: left;
+}
+
+html[lang="en"] .hire-form__group input::placeholder,
+html[lang="en"] .hire-form__group textarea::placeholder,
+html[lang="en"] .hire-input-wrap input::placeholder,
+html[lang="en"] .hire-input-wrap textarea::placeholder {
+  direction: ltr;
+  text-align: left;
+}
+
+html[lang="en"] .hire-input-error-text {
+  text-align: left;
+}
+
+/* English error icon */
+
+html[lang="en"] .hire-input-error-icon {
+  right: 19px;
+  left: auto;
+}
+
+/* English form controls */
+
+html[lang="en"] .hire-input-wrap input,
+html[lang="en"] .hire-input-wrap select {
+  padding-left: 14px;
+  padding-right: 42px;
+}

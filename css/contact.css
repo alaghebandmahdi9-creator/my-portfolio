@@ -1,0 +1,263 @@
+/* =========================================================
+   صفحه تماس با من
+========================================================= */
+
+/* ----------------------------------------
+   هیرو
+---------------------------------------- */
+.contact-hero__email {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+  color: #1a1818;
+  font-size: 18pt;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.contact-hero__mail-icon {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 100px;
+  left: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+html[lang="en"] .scroll-indicator {
+  left: auto;
+  right: 2.5rem;
+}
+
+/* ----------------------------------------
+   بدنه
+---------------------------------------- */
+.contact-body {
+  background: #fff;
+  padding: 60px 0 80px;
+}
+
+.contact-body__inner {
+  display: grid;
+  grid-template-columns: 1fr 520px;
+  gap: 60px;
+  align-items: start;
+}
+
+html[dir="rtl"] .contact-body__inner {
+  grid-template-columns: 1fr 520px;
+}
+
+html[dir="rtl"] .contact-social {
+  order: 2;
+}
+
+html[dir="rtl"] .contact-form-wrap {
+  order: 1;
+  margin-top: 10px;
+}
+
+/* ----------------------------------------
+   فرم
+---------------------------------------- */
+.contact-form__title {
+  text-align: center;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1a1818;
+  margin: 0 0 16px;
+}
+
+.contact-form {
+  width: 520px;
+  height: auto;
+  max-width: 100%;
+  background: #fffaed;
+  border-radius: 28px;
+  padding: 32px 36px 24px;
+  box-shadow: 0 0 17.5px 3px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  box-sizing: border-box;
+}
+
+.contact-form .hire-form__group label {
+  display: block;
+  text-align: right;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #1a1818;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 1.5px solid #1a1818;
+  border-radius: 8px;
+  background: #fff;
+  padding: 10px 14px;
+  font-family: inherit;
+}
+
+.contact-form textarea {
+  min-height: 110px;
+  resize: none;
+}
+
+.contact-form__submit {
+  align-self: center;
+  margin-top: auto;
+  padding: 10px 28px;
+}
+
+/* ----------------------------------------
+   چک‌ باکس حریم خصوصی
+---------------------------------------- */
+.contact-form .hire-form__privacy {
+  width: 100%;
+}
+
+.contact-form .privacy-check {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+  font-weight: 400;
+}
+
+.contact-form .privacy-check input {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  margin: 3px 0 0;
+}
+
+.privacy-check span {
+  position: relative;
+  top: -4px;
+}
+
+html[lang="fa"] .contact-form .privacy-check {
+  flex-direction: row;
+  justify-content: flex-start;
+  text-align: right;
+  direction: rtl;
+}
+
+html[lang="en"] .contact-form .privacy-check {
+  flex-direction: row;
+  justify-content: flex-start;
+  text-align: left;
+  direction: ltr;
+}
+
+html[lang="en"] .contact-form .privacy-check a {
+  color: #c9a53a;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+html[lang="en"] .contact-form .privacy-check a:hover {
+  color: #e1b943;
+}
+
+/* ----------------------------------------
+   شبکه‌های اجتماعی
+---------------------------------------- */
+.contact-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.contact-social__title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 28px;
+  color: #1a1818;
+}
+
+.contact-social__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: #1a1818;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.contact-social__item:hover {
+  opacity: 0.75;
+}
+
+.contact-social__icon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.contact-social__name {
+  font-size: 0.95rem;
+  text-transform: lowercase;
+}
+
+.contact-social__line {
+  display: block;
+  width: 137px;
+  height: 1px;
+  background: #000;
+  margin: 16px 0;
+}
+
+/* ----------------------------------------
+   نسخه انگلیسی: جابه‌جایی ستون‌ها
+---------------------------------------- */
+html[lang="en"] .contact-body__inner {
+  grid-template-columns: 520px 1fr;
+  transform: translateX(70px);
+}
+
+html[lang="en"] .contact-form-wrap {
+  order: 1;
+}
+
+html[lang="en"] .contact-social {
+  order: 2;
+}
+
+/* ----------------------------------------
+   ریسپانسیو
+---------------------------------------- */
+@media (max-width: 900px) {
+  .contact-body__inner,
+  html[dir="rtl"] .contact-body__inner {
+    grid-template-columns: 1fr;
+  }
+
+  html[dir="rtl"] .contact-social,
+  html[dir="rtl"] .contact-form-wrap {
+    order: unset;
+  }
+
+  .contact-form {
+    width: 100%;
+    height: auto;
+    min-height: 490px;
+  }
+
+  .contact-social {
+    order: 2;
+  }
+}

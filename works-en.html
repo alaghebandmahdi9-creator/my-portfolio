@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Works | Mahdi Alagheband</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/design-system.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/works.css" />
+  </head>
+  <div class="scroll-indicator">
+    <div class="line-track">
+      <div class="line-fill"></div>
+    </div>
+    <span class="scroll-label">Scroll</span>
+  </div>
+  <body class="page-about page-works">
+    <header class="header header--light">
+      <div class="container header__inner">
+        <button class="header__hamburger" id="hamburgerBtn" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+
+        <a href="home-en.html" class="header__logo">
+          <img src="images/logo-gold.png" alt="Mahdi Alagheband Logo" />
+        </a>
+
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li><a href="home-en.html" class="header__link">Home</a></li>
+            <li><a href="about-en.html" class="header__link">About Me</a></li>
+            <li>
+              <a href="works-en.html" class="header__link active">Works</a>
+            </li>
+            <li><a href="contact-en.html" class="header__link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="header__actions">
+          <a href="hire-en.html" class="btn btn-primary header__btn">Hire Me</a>
+          <div class="header__lang">
+            <button class="lang-btn" id="langBtn" type="button">
+              FA
+              <span class="lang-btn__arrow">▾</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu__overlay" id="mobileOverlay"></div>
+      <div class="mobile-menu__panel">
+        <ul class="mobile-menu__list">
+          <li><a href="home-en.html" class="mobile-menu__link">Home</a></li>
+          <li>
+            <a href="about-en.html" class="mobile-menu__link">About Me</a>
+          </li>
+          <li>
+            <a href="works-en.html" class="mobile-menu__link">Works</a>
+          </li>
+          <li><a href="#" class="mobile-menu__link">Contact</a></li>
+        </ul>
+        <div class="mobile-menu__actions">
+          <a href="hire-en.html" class="btn btn-primary">Hire Me</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- هیرو: همان کلاس‌های about-hero -->
+    <section class="about-hero">
+      <div class="container about-hero__inner">
+        <div class="about-hero__title-block">
+          <h1 class="about-hero__title">Works</h1>
+          <div class="about-hero__line"></div>
+          <nav class="about-hero__breadcrumb" aria-label="Breadcrumb">
+            <a href="home-en.html">Home</a>
+            <span> &gt; </span>
+            <span>Works</span>
+          </nav>
+        </div>
+
+        <div class="about-hero__graphic">
+          <img
+            src="images/works-hero-graphic.png"
+            alt=""
+            class="about-hero__img"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- فیلتر + کارت‌ها -->
+    <section class="works-page section-light">
+      <div class="container">
+        <div class="works-filter" role="tablist">
+          <button
+            type="button"
+            class="works-filter__btn is-active"
+            data-filter="all"
+          >
+            All Projects
+          </button>
+          <button type="button" class="works-filter__btn" data-filter="site">
+            Website
+          </button>
+          <button
+            type="button"
+            class="works-filter__btn"
+            data-filter="illustration"
+          >
+            Illustration
+          </button>
+          <button type="button" class="works-filter__btn" data-filter="logo">
+            Logo
+          </button>
+          <button
+            type="button"
+            class="works-filter__btn"
+            data-filter="magazine"
+          >
+            Magazine
+          </button>
+          <button
+            type="button"
+            class="works-filter__btn"
+            data-filter="typography"
+          >
+            Typography
+          </button>
+        </div>
+
+        <div class="works-masonry">
+          <a href="project-magazine-en.html?from=works" class="works-item-link">
+            <article
+              class="card card-work works-item span-tall"
+              data-category="magazine"
+              data-bar="gold"
+            >
+              <div class="card-work__image">
+                <img
+                  src="images/work-magazine-sargarmi.jpg"
+                  alt="Entertainment Magazine"
+                  class="work-image"
+                />
+                <span class="work-top-bar"></span>
+              </div>
+              <div class="card-work__label">
+                <span class="work-category">Magazine</span>
+                <span class="work-name">Entertainment</span>
+                <span class="work-link">View Project →</span>
+              </div>
+            </article>
+          </a>
+          <a href="project-sorena-en.html?from=works" class="works-item-link">
+            <article
+              class="card card-work works-item span-tall"
+              data-category="illustration"
+              data-bar="mint"
+            >
+              <div class="card-work__image">
+                <img
+                  src="images/work-illustration-sorena.png"
+                  alt="Sorena Illustration"
+                  class="work-image"
+                />
+                <span class="work-top-bar"></span>
+              </div>
+              <div class="card-work__label">
+                <span class="work-category">Illustration</span>
+                <span class="work-name">Sorena</span>
+                <span class="work-link">View Project →</span>
+              </div>
+            </article>
+          </a>
+          <a
+            href="project-chobkadeh-en.html?from=works"
+            class="works-item-link"
+          >
+            <article
+              class="card card-work works-item"
+              data-category="logo"
+              data-bar="purple"
+            >
+              <div class="card-work__image">
+                <img
+                  src="images/work-2.jpg"
+                  alt="Chobkadeh Logo"
+                  class="work-image"
+                />
+                <span class="work-top-bar"></span>
+              </div>
+              <div class="card-work__label">
+                <span class="work-category">Logo</span>
+                <span class="work-name">Chobkadeh</span>
+                <span class="work-link">View Project →</span>
+              </div>
+            </article>
+          </a>
+          <a href="project-aftab-en.html?from=works" class="works-item-link">
+            <article
+              class="card card-work works-item"
+              data-category="logo"
+              data-bar="coral"
+            >
+              <div class="card-work__image">
+                <img
+                  src="images/work-1.jpg"
+                  alt="Aftab Logo"
+                  class="work-image"
+                />
+                <span class="work-top-bar"></span>
+              </div>
+              <div class="card-work__label">
+                <span class="work-category">Logo</span>
+                <span class="work-name">Aftab</span>
+                <span class="work-link">View Project →</span>
+              </div>
+            </article>
+          </a>
+          <a href="project-site-en.html?from=works" class="works-item-link">
+            <article
+              class="card card-work works-item span-wide"
+              data-category="site"
+              data-bar="blue"
+            >
+              <div class="card-work__image">
+                <img
+                  src="images/work-site-personal.png"
+                  alt="Personal Website"
+                  class="work-image"
+                />
+                <span class="work-top-bar"></span>
+              </div>
+              <div class="card-work__label">
+                <span class="work-category">Website</span>
+                <span class="work-name">Personal (Designer)</span>
+                <span class="work-link">View Project →</span>
+              </div>
+            </article>
+          </a>
+          <a href="project-hess-en.html?from=works" class="works-item-link">
+            <article
+              class="card card-work works-item"
+              data-category="logo"
+              data-bar="orange"
+            >
+              <div class="card-work__image">
+                <img
+                  src="images/work-logo-hess.png"
+                  alt="Hess Logo"
+                  class="work-image"
+                />
+                <span class="work-top-bar"></span>
+              </div>
+              <div class="card-work__label">
+                <span class="work-category">Logo</span>
+                <span class="work-name">Hesse khub</span>
+                <span class="work-link">View Project →</span>
+              </div>
+            </article>
+          </a>
+          <a
+            href="project-typography-en.html?from=works"
+            class="works-item-link"
+          >
+            <article
+              class="card card-work works-item"
+              data-category="typography"
+              data-bar="teal"
+            >
+              <div class="card-work__image">
+                <img
+                  src="images/work-typography.png"
+                  alt="Typography"
+                  class="work-image"
+                />
+                <span class="work-top-bar"></span>
+              </div>
+              <div class="card-work__label">
+                <span class="work-category">Typography</span>
+                <span class="work-name">Typography</span>
+                <span class="work-link">View Project →</span>
+              </div>
+            </article>
+          </a>
+          <a href="project-daruit-en.html?from=works" class="works-item-link">
+            <article
+              class="card card-work works-item"
+              data-category="illustration"
+              data-bar="pink"
+            >
+              <div class="card-work__image">
+                <img
+                  src="images/work-3.jpg"
+                  alt="Daruit Illustration"
+                  class="work-image"
+                />
+                <span class="work-top-bar"></span>
+              </div>
+              <div class="card-work__label">
+                <span class="work-category">Illustration</span>
+                <span class="work-name">Daruit</span>
+                <span class="work-link">View Project →</span>
+              </div>
+            </article>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <img src="images/logo.png" alt="Logo" class="footer__logo" />
+          <div class="footer__brand-text">
+            <h3 class="footer__name">Mahdi Alagheband</h3>
+            <p class="footer__role">UI/UX & Logo Designer</p>
+          </div>
+        </div>
+
+        <div class="footer__cta">
+          <p class="footer__cta-text">
+            For new projects or team and freelance<br />
+            collaborations, get in touch<br />
+            with me.
+          </p>
+          <a href="hire-en.html" class="btn btn-primary footer__btn">Hire Me</a>
+        </div>
+
+        <div class="footer__contact">
+          <a
+            href="mailto:alaghebandmahdi9@gmail.com"
+            class="footer__contact-item"
+          >
+            <span>alaghebandmahdi9@gmail.com</span>
+            <span class="footer__icon">✉</span>
+          </a>
+          <a href="tel:+989120758032" class="footer__contact-item">
+            <span>+989120758032</span>
+            <span class="footer__icon">☎</span>
+          </a>
+          <div class="footer__contact-item">
+            <span>Tehran, Iran</span>
+            <span class="footer__icon"> 📍</span>
+          </div>
+          <div class="footer__socials">
+            <a
+              href="https://instagram.com/mahdialagheband"
+              class="footer__social"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <img src="images/icon-instagram-footer.png" alt="Instagram" />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/mahdi-alagheband-359581420"
+              class="footer__social"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <img src="images/icon-linkedin-footer.png" alt="LinkedIn" />
+            </a>
+            <a
+              href="https://dribbble.com/mahdi-alagheband"
+              class="footer__social"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Dribbble"
+            >
+              <img src="images/icon-dribbble-footer.png" alt="Dribbble" />
+            </a>
+            <a
+              href="https://www.behance.net/mahdialagheband"
+              class="footer__social"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Behance"
+            >
+              <img src="images/icon-behance-footer.png" alt="Behance" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="container footer__bottom-inner">
+          <div class="footer__legal">
+            <a href="privacy-en.html">Privacy Policy</a>
+            <span> | </span>
+            <a href="terms-en.html">Terms and Conditions</a>
+          </div>
+          <p class="footer__copy">© 2026. All rights reserved.</p>
+          <p class="footer__rights">
+            Designed and built with ❤️ by Mahdi Alagheband
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/home.js"></script>
+  </body>
+</html>

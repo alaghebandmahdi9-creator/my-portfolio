@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me | Mahdi Alagheband</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/design-system.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/about.css" />
+  </head>
+  <body class="page-about">
+    <div class="scroll-indicator">
+      <div class="line-track">
+        <div class="line-fill"></div>
+      </div>
+      <span class="scroll-label">Scroll</span>
+    </div>
+    <!-- ========== Header (light) ========== -->
+    <header class="header header--light">
+      <div class="container header__inner">
+        <button class="header__hamburger" id="hamburgerBtn" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <a href="home-en.html" class="header__logo">
+          <img src="images/logo-gold.png" alt="Mahdi Alagheband Logo" />
+        </a>
+
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li><a href="home-en.html" class="header__link">Home</a></li>
+            <li>
+              <a href="about-en.html" class="header__link active">About Me</a>
+            </li>
+            <li><a href="works-en.html" class="header__link">Works</a></li>
+            <li><a href="contact-en.html" class="header__link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="header__actions">
+          <a href="hire-en.html" class="btn btn-primary header__btn">Hire Me</a>
+          <div class="header__lang">
+            <button class="lang-btn" id="langBtn" type="button">
+              FA
+              <span class="lang-btn__arrow">▾</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu__overlay" id="mobileOverlay"></div>
+      <div class="mobile-menu__panel">
+        <ul class="mobile-menu__list">
+          <li><a href="home-en.html" class="mobile-menu__link">Home</a></li>
+          <li>
+            <a href="about-en.html" class="mobile-menu__link">About Me</a>
+          </li>
+          <li><a href="works-en.html" class="mobile-menu__link">Works</a></li>
+          <li><a href="#" class="mobile-menu__link">Contact</a></li>
+        </ul>
+        <div class="mobile-menu__actions">
+          <a href="hire-en.html" class="btn btn-primary">Hire Me</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== About Hero ========== -->
+    <section class="about-hero">
+      <div class="container about-hero__inner">
+        <!-- عنوان → سمت چپ در انگلیسی -->
+        <div class="about-hero__title-block">
+          <h1 class="about-hero__title">About Me</h1>
+          <div class="about-hero__line"></div>
+          <nav class="about-hero__breadcrumb" aria-label="Breadcrumb">
+            <a href="home-en.html">Home</a>
+            <span> &gt; </span>
+            <span>About Me</span>
+          </nav>
+        </div>
+
+        <!-- عکس گرافیکی → سمت راست در انگلیسی -->
+        <div class="about-hero__graphic">
+          <img
+            src="images/about-hero-graphic.png"
+            alt=""
+            class="about-hero__img"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Bio + Photo ========== -->
+    <section class="about-bio">
+      <div class="container about-bio__inner">
+        <div class="about-bio__photo">
+          <img src="images/about-photo.jpg" alt="Mahdi Alagheband" />
+        </div>
+        <div class="about-bio__text">
+          <p>
+            I started my career as a graphic designer in 2024. My learning
+            journey began with programming languages, and then I specialized in
+            website design, UI/UX, logo design, and illustration. This
+            website—from initial design to early prototypes, coding, and
+            development—has been entirely created by me.
+          </p>
+          <p>
+            My focus is on visual identity design, logos, websites, and book and
+            magazine design. My goal is to create creative and purposeful
+            solutions for your brand growth.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Tools ========== -->
+    <section class="about-tools">
+      <div class="container about-tools__inner">
+        <div class="about-tools__item">
+          <img src="images/tool-ai.png" alt="Adobe Illustrator" />
+        </div>
+        <div class="about-tools__item">
+          <img src="images/tool-id.png" alt="Adobe InDesign" />
+        </div>
+        <div class="about-tools__item">
+          <img src="images/tool-figma.png" alt="Figma" />
+        </div>
+        <div class="about-tools__item">
+          <img src="images/tool-ps.png" alt="Adobe Photoshop" />
+        </div>
+        <div class="about-tools__item">
+          <img src="images/tool-canva.png" alt="Canva" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Quote ========== -->
+    <section class="about-quote">
+      <div class="container">
+        <blockquote>
+          I design experiences that are inspiring and effective.
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ========== Footer ========== -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <img src="images/logo.png" alt="Logo" class="footer__logo" />
+          <div class="footer__brand-text">
+            <h3 class="footer__name">Mahdi Alagheband</h3>
+            <p class="footer__role">UI/UX & Logo Designer</p>
+          </div>
+        </div>
+
+        <div class="footer__cta">
+          <p class="footer__cta-text">
+            For new projects or team and freelance<br />
+            collaborations, get in touch<br />
+            with me.
+          </p>
+          <a href="hire-en.html" class="btn btn-primary footer__btn">Hire Me</a>
+        </div>
+
+        <div class="footer__contact">
+          <a
+            href="mailto:alaghebandmahdi9@gmail.com"
+            class="footer__contact-item"
+          >
+            <span>alaghebandmahdi9@gmail.com</span>
+            <span class="footer__icon">✉</span>
+          </a>
+          <a href="tel:+989120758032" class="footer__contact-item">
+            <span>+989120758032</span>
+            <span class="footer__icon">☎</span>
+          </a>
+          <div class="footer__contact-item">
+            <span>Tehran, Iran</span>
+            <span class="footer__icon"> 📍</span>
+          </div>
+          <div class="footer__socials">
+            <a
+              href="https://instagram.com/mahdialagheband"
+              class="footer__social"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <img src="images/icon-instagram-footer.png" alt="Instagram" />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/mahdi-alagheband-359581420"
+              class="footer__social"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <img src="images/icon-linkedin-footer.png" alt="LinkedIn" />
+            </a>
+            <a
+              href="https://dribbble.com/mahdi-alagheband"
+              class="footer__social"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Dribbble"
+            >
+              <img src="images/icon-dribbble-footer.png" alt="Dribbble" />
+            </a>
+            <a
+              href="https://www.behance.net/mahdialagheband"
+              class="footer__social"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Behance"
+            >
+              <img src="images/icon-behance-footer.png" alt="Behance" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="container footer__bottom-inner">
+          <div class="footer__legal">
+            <a href="privacy-en.html">Privacy Policy</a>
+            <span> | </span>
+            <a href="terms-en.html">Terms and Conditions</a>
+          </div>
+          <p class="footer__copy">© 2026. All rights reserved.</p>
+          <p class="footer__rights">
+            Designed and built with ❤️ by Mahdi Alagheband
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/home.js"></script>
+  </body>
+</html>

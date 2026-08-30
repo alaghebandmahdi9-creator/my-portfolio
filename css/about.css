@@ -1,0 +1,398 @@
+/* =========================================================
+   صفحه درباره من
+========================================================= */
+
+/* ----------------------------------------
+   هدر روشن
+---------------------------------------- */
+.page-about .header--light {
+  background-color: #f5f5f5;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.page-about .header--light .header__link {
+  color: #1a1818;
+}
+
+.page-about .header--light .header__link:hover,
+.page-about .header--light .header__link.active {
+  color: var(--color-primary);
+}
+
+.page-about .header--light .header__link.active::after {
+  background-color: var(--color-primary);
+}
+
+.page-about .header--light .lang-btn {
+  color: #1a1818;
+}
+
+.page-about .header--light .header__hamburger span {
+  background-color: #1a1818;
+}
+
+.page-about .header__logo img {
+  height: 120px;
+  width: auto;
+}
+
+/* ----------------------------------------
+   نشانگر اسکرول
+---------------------------------------- */
+.scroll-indicator {
+  position: absolute;
+  bottom: 100px;
+  left: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+html[lang="en"] .scroll-indicator {
+  left: auto;
+  right: 2.5rem;
+}
+
+/* ----------------------------------------
+   هیرو
+---------------------------------------- */
+.about-hero {
+  background-color: #f5f5f5;
+  min-height: 320px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.about-hero__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  position: relative;
+  min-height: 260px;
+}
+
+.about-hero__graphic {
+  flex: 1 1 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-hero__img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+html[lang="FA"] .about-hero__title-block {
+  flex: 1 1 40%;
+  text-align: right;
+  padding-top: 40px;
+}
+
+html[lang="EN"] .about-hero__title-block {
+  flex: 1 1 40%;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.about-hero__title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1818;
+  margin-bottom: 12px;
+}
+
+html[lang="FA"] .about-hero__line {
+  width: 174px;
+  height: 2px;
+  background-color: #1a1818;
+  margin-right: 0;
+  margin-left: auto;
+  margin-bottom: 12px;
+}
+
+html[lang="EN"] .about-hero__line {
+  padding-left: auto;
+  width: 174px;
+  height: 2px;
+  background-color: #1a1818;
+  margin-bottom: 12px;
+}
+
+.about-hero__breadcrumb {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.about-hero__breadcrumb a {
+  color: #666;
+  transition: color 0.25s ease;
+}
+
+.about-hero__breadcrumb a:hover {
+  color: var(--color-primary);
+}
+
+/* ----------------------------------------
+   بیو
+---------------------------------------- */
+.about-bio {
+  background-color: #e8c43a;
+  padding: 60px 0;
+}
+
+.about-bio:hover {
+  background-color: #e3cb82;
+}
+
+.about-bio__inner {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.about-bio__photo {
+  flex-shrink: 0;
+  width: 280px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 4px solid rgba(255, 255, 255, 0.35);
+}
+
+.about-bio__photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.about-bio__text {
+  flex: 1;
+  color: #1a1818;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 2;
+  position: relative;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.about-bio__text p + p {
+  margin-top: 16px;
+}
+
+.about-bio__text::before,
+.about-bio__text::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 192px;
+  background-color: #fff6f6;
+}
+
+.about-bio__text::before {
+  left: 0;
+}
+
+.about-bio__text::after {
+  right: 0;
+}
+
+/* ----------------------------------------
+   ابزارها
+---------------------------------------- */
+.about-tools {
+  background-color: #7fe0d0;
+  padding: 50px 0;
+  transition: background-color 0.3s ease;
+}
+
+.about-tools:hover {
+  background-color: #88e7cf;
+}
+
+.about-tools__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.about-tools__item {
+  width: 120px;
+  height: 90px;
+  background: #fff;
+  border-radius: 14px;
+  border: 1px solid #1a1818;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 20px 20px 16px rgba(0, 0, 0, 0.08);
+}
+
+.about-tools__item img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+/* ----------------------------------------
+   نقل‌قول
+---------------------------------------- */
+.about-quote {
+  background-color: #c56bff;
+  padding: 70px 0;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.about-quote:hover {
+  background-color: #e08de9;
+}
+
+.about-quote blockquote {
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.about-quote blockquote::before,
+.about-quote blockquote::after {
+  font-size: 2.5rem;
+  opacity: 0.5;
+}
+
+.about-quote blockquote::before {
+  content: "\201D";
+  top: -20px;
+  right: 0;
+  left: auto;
+  transform: none;
+}
+
+.about-quote blockquote::after {
+  content: "\201c";
+  bottom: -30px;
+  left: 0;
+  right: auto;
+  transform: none;
+}
+
+html[lang="en"] .about-quote blockquote::before {
+  content: "\201c";
+  bottom: -30px;
+  left: 0;
+  right: auto;
+  transform: none;
+}
+
+html[lang="en"] .about-quote blockquote::after {
+  content: "\201D";
+  top: -20px;
+  right: 0;
+  left: auto;
+  transform: none;
+}
+
+/* ----------------------------------------
+   ریسپانسیو
+---------------------------------------- */
+@media (min-width: 1024px) {
+  .about-hero__title-block {
+    padding-top: 131px;
+    padding-left: 126px;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .page-about .header__logo img {
+    height: 110px;
+  }
+}
+
+@media (max-width: 900px) {
+  .about-hero__inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .about-hero__title-block {
+    padding-top: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    order: 1;
+  }
+
+  .about-hero__graphic {
+    order: 2 !important;
+  }
+
+  .about-hero__line {
+    margin: 0 auto 12px;
+  }
+
+  .about-bio__inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-bio__photo {
+    width: 220px;
+  }
+
+  .about-tools__item {
+    width: 72px;
+    height: 72px;
+  }
+
+  .about-tools__item img {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media (max-width: 850px) {
+  .page-about .header__logo img {
+    height: 80px;
+  }
+}
+
+@media (max-width: 640px) {
+  .page-about .header__logo img {
+    height: 90px;
+  }
+
+  .about-hero {
+    min-height: auto;
+    padding: 30px 0 40px;
+  }
+
+  .about-hero__title {
+    font-size: 24px;
+  }
+
+  .about-bio {
+    padding: 40px 0;
+  }
+
+  .about-quote {
+    padding: 50px 0;
+  }
+
+  .about-quote blockquote {
+    font-size: 1.15rem;
+  }
+}

@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>استخدام من | مهدی علاقه‌بند</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/design-system.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/hire.css" />
+  </head>
+  <body class="page-hire">
+    <div class="scroll-indicator">
+      <div class="line-track">
+        <div class="line-fill"></div>
+      </div>
+      <span class="scroll-label">Scroll</span>
+    </div>
+    <!-- ========== هدر (همان استایل درباره من) ========== -->
+    <header class="header header--light">
+      <div class="container header__inner">
+        <button class="header__hamburger" id="hamburgerBtn" aria-label="منو">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <a href="home.html" class="header__logo">
+          <img src="images/logo-gold.png" alt="لوگو مهدی علاقه‌بند" />
+        </a>
+
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li><a href="home.html" class="header__link">خانه</a></li>
+            <li><a href="about.html" class="header__link">درباره من</a></li>
+            <li><a href="works.html" class="header__link">نمونه کارها</a></li>
+            <li><a href="contact.html" class="header__link">تماس با من</a></li>
+          </ul>
+        </nav>
+
+        <div class="header__actions">
+          <a href="hire.html" class="btn btn-primary header__btn">استخدام من</a>
+          <div class="header__lang">
+            <button class="lang-btn" id="langBtn" type="button">
+              EN
+              <span class="lang-btn__arrow">▾</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- منوی موبایل -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu__overlay" id="mobileOverlay"></div>
+      <div class="mobile-menu__panel">
+        <ul class="mobile-menu__list">
+          <li><a href="home.html" class="mobile-menu__link">خانه</a></li>
+          <li><a href="about.html" class="mobile-menu__link">درباره من</a></li>
+          <li>
+            <a href="works.html" class="mobile-menu__link">نمونه کارها</a>
+          </li>
+          <li>
+            <a href="works-en.html" class="mobile-menu__link">تماس با من</a>
+          </li>
+        </ul>
+        <div class="mobile-menu__actions">
+          <a href="hire.html" class="btn btn-primary">استخدام من</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== هیرو استخدام من ========== -->
+    <section class="hire-hero">
+      <div class="hire-hero__content">
+        <!-- عنوان + بردکرامب -->
+        <div class="hire-hero__title-block">
+          <h1 class="hire-hero__title">استخدام من</h1>
+          <div class="hire-hero__line"></div>
+          <nav class="hire-hero__breadcrumb" aria-label="مسیر صفحه">
+            <a href="home.html">خانه</a>
+            <span> > </span>
+            <span>استخدام من</span>
+          </nav>
+        </div>
+
+        <!-- سه المان افقی -->
+        <div class="hire-hero__features">
+          <div class="hire-feature">
+            <img
+              src="images/hire-icon-calendar.png"
+              alt=""
+              class="hire-feature__icon"
+            />
+            <p class="hire-feature__text">آماده برای<br />پروژه‌های جدید</p>
+          </div>
+
+          <div class="hire-feature">
+            <img
+              src="images/hire-icon-globe.png"
+              alt=""
+              class="hire-feature__icon"
+            />
+            <p class="hire-feature__text">فعالیت بین المللی</p>
+          </div>
+
+          <div class="hire-feature">
+            <img
+              src="images/hire-icon-clock.png"
+              alt=""
+              class="hire-feature__icon"
+            />
+            <p class="hire-feature__text">زمان پاسخگویی<br />۲۴ ساعت</p>
+          </div>
+        </div>
+      </div>
+      <div class="hire-hero__graphic">
+        <img
+          src="images/hire-hero-graphic.png"
+          alt=""
+          class="hire-hero__graphic-img"
+        />
+      </div>
+    </section>
+    <!-- ========== نحوه کار ========== -->
+    <section class="hire-process">
+      <div class="container">
+        <div class="hire-process__header">
+          <h2 class="hire-process__title">نحوه کار</h2>
+          <div class="hire-process__line"></div>
+        </div>
+
+        <div class="hire-process__steps">
+          <!-- مرحله ۱ -->
+          <div class="hire-step">
+            <div class="hire-step__icon">
+              <img src="images/step-1.png" alt="" />
+            </div>
+            <h3 class="hire-step__title">۱.کشف</h3>
+            <p class="hire-step__text">
+              در مورد اهداف شما، نیازها و الزامات پروژه صحبت میکنیم.
+            </p>
+          </div>
+
+          <!-- مرحله ۲ -->
+          <div class="hire-step">
+            <div class="hire-step__icon">
+              <img src="images/step-2.png" alt="" />
+            </div>
+            <h3 class="hire-step__title">۲.تحقیق</h3>
+            <p class="hire-step__text">
+              با تحقیق و آنالیز دقیق، بهترین مسیر را برای پروژه شما پیدا میکنم.
+            </p>
+          </div>
+
+          <!-- مرحله ۳ -->
+          <div class="hire-step">
+            <div class="hire-step__icon">
+              <img src="images/step-3.png" alt="" />
+            </div>
+            <h3 class="hire-step__title">۳.طراحی</h3>
+            <p class="hire-step__text">
+              طراحی نمونه‌های اولیه را هم راستا با اهداف پروژه آغاز میکنم.
+            </p>
+          </div>
+
+          <!-- مرحله ۴ -->
+          <div class="hire-step">
+            <div class="hire-step__icon">
+              <img src="images/step-4.png" alt="" />
+            </div>
+            <h3 class="hire-step__title">۴.بازبینی</h3>
+            <p class="hire-step__text">
+              نمونه‌های طراحی شده با نظر شما بازبینی و بازطراحی میشوند تا به
+              نمونه ایده آل برسند.
+            </p>
+          </div>
+
+          <!-- مرحله ۵ -->
+          <div class="hire-step">
+            <div class="hire-step__icon">
+              <img src="images/step-5.png" alt="" />
+            </div>
+            <h3 class="hire-step__title">۵.تحویل</h3>
+            <p class="hire-step__text">
+              فایل‌های نهایی در زمان مقرر تحویل داده شده و آماده استفاده هستند.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== فرم پروژه ========== -->
+    <section class="hire-form-section">
+      <div class="container">
+        <h2 class="hire-form__title">در مورد پروژه خود توضیح دهید</h2>
+
+        <form class="hire-form" action="#" method="post" novalidate>
+          <!-- ردیف ۱: نام + ایمیل -->
+          <div class="hire-form__row">
+            <div class="hire-form__group">
+              <label for="fullName">نام و نام خانوادگی <span>*</span></label>
+              <div class="hire-input-wrap">
+                <input
+                  type="text"
+                  id="fullName"
+                  name="fullName"
+                  placeholder="مهدی علاقه بند"
+                  required
+                />
+                <span class="hire-input-error-icon" aria-hidden="true">!</span>
+              </div>
+              <p class="hire-input-error-text">این قسمت باید تکمیل شود!</p>
+            </div>
+
+            <div class="hire-form__group">
+              <label for="email">ایمیل <span>*</span></label>
+              <div class="hire-input-wrap">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="alaghebandmahdi9@gmail.com"
+                  required
+                />
+                <span class="hire-input-error-icon" aria-hidden="true">!</span>
+              </div>
+              <p class="hire-input-error-text">این قسمت باید تکمیل شود!</p>
+            </div>
+          </div>
+
+          <!-- ردیف ۲: نوع پروژه + بودجه -->
+          <div class="hire-form__row">
+            <div class="hire-form__group">
+              <label for="projectType">نوع پروژه <span>*</span></label>
+              <div class="hire-input-wrap">
+                <select id="projectType" name="projectType" required>
+                  <option value="" disabled selected>انتخاب کنید</option>
+                  <option value="logo">طراحی لوگو</option>
+                  <option value="identity">هویت بصری</option>
+                  <option value="uiux">UI/UX</option>
+                  <option value="print">طراحی چاپی</option>
+                  <option value="other">سایر</option>
+                </select>
+                <span class="hire-input-error-icon" aria-hidden="true">!</span>
+              </div>
+              <p class="hire-input-error-text">این قسمت باید تکمیل شود!</p>
+            </div>
+
+            <div class="hire-form__group">
+              <label for="budget">مقدار بودجه</label>
+              <div class="hire-input-wrap">
+                <input type="text" id="budget" name="budget" placeholder="" />
+                <span class="hire-input-error-icon" aria-hidden="true">!</span>
+              </div>
+              <p class="hire-input-error-text">این قسمت باید تکمیل شود!</p>
+            </div>
+          </div>
+
+          <!-- ردیف ۳: توضیحات (تمام عرض) -->
+          <div class="hire-form__row">
+            <div class="hire-form__group hire-form__group--full">
+              <label for="message">توضیحات پروژه</label>
+              <div class="hire-input-wrap">
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="پروژه خود را مختصراً شرح دهید ..."
+                ></textarea>
+                <span class="hire-input-error-icon" aria-hidden="true">!</span>
+              </div>
+              <p class="hire-input-error-text">این قسمت باید تکمیل شود!</p>
+            </div>
+          </div>
+          <div class="hire-form__group hire-form__privacy">
+            <label class="privacy-check">
+              <input type="checkbox" name="privacy" id="privacy" required />
+              <span>
+                <a href="privacy.html" target="_blank" rel="noopener"
+                  >سیاست حفظ حریم خصوصی</a
+                >
+                را خوانده‌ام و موافقم.
+              </span>
+            </label>
+            <p class="hire-input-error-text">این قسمت باید تکمیل شود !</p>
+          </div>
+
+          <!-- دکمه ارسال -->
+          <button type="submit" class="btn btn-primary hire-form__submit">
+            ارسال پیام
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <!-- سمت راست: لوگو و معرفی -->
+        <div class="footer__brand">
+          <img src="images/logo.png" alt="لوگو" class="footer__logo" />
+          <div class="footer__brand-text">
+            <h3 class="footer__name">مهدی علاقه‌بند</h3>
+            <p class="footer__role">طراح UI/UX و طراح لوگو</p>
+          </div>
+        </div>
+
+        <!-- وسط: متن دعوت به همکاری -->
+        <div class="footer__cta">
+          <p class="footer__cta-text">
+            برای پروژه‌های جدید یا همکاری‌های<br />
+            تیمی و فریلنسری، با من<br />
+            در ارتباط باشید.
+          </p>
+          <a href="#" class="btn btn-primary footer__btn">استخدام من</a>
+        </div>
+
+        <!-- سمت چپ: اطلاعات تماس -->
+        <div class="footer__contact">
+          <a
+            href="mailto:alaghebandmahdi9@gmail.com"
+            class="footer__contact-item"
+          >
+            <span>alaghebandmahdi9@gmail.com</span>
+            <span class="footer__icon">✉</span>
+          </a>
+          <a href="tel:09120758032" class="footer__contact-item">
+            <span>09120758032</span>
+            <span class="footer__icon">☎</span>
+          </a>
+          <div class="footer__contact-item">
+            <span>تهران، ایران</span>
+            <span class="footer__icon"> 📍</span>
+          </div>
+          <div class="footer__socials">
+            <a
+              href="https://instagram.com/mahdialagheband"
+              class="footer__social"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <img src="images/icon-instagram-footer.png" alt="Instagram" />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/mahdi-alagheband-359581420"
+              class="footer__social"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <img src="images/icon-linkedin-footer.png" alt="LinkedIn" />
+            </a>
+            <a
+              href="https://dribbble.com/mahdi-alagheband"
+              class="footer__social"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Dribbble"
+            >
+              <img src="images/icon-dribbble-footer.png" alt="Dribbble" />
+            </a>
+            <a
+              href="https://www.behance.net/mahdialagheband"
+              class="footer__social"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Behance"
+            >
+              <img src="images/icon-behance-footer.png" alt="Behance" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- خط پایین فوتر -->
+      <div class="footer__bottom">
+        <div class="container footer__bottom-inner">
+          <div class="footer__legal">
+            <a href="privacy.html">حریم خصوصی</a>
+            <span> | </span>
+            <a href="terms.html">شرایط استفاده</a>
+          </div>
+          <p class="footer__rights">
+            .۱۴۰۵ مهدی علاقه‌بند. تمامی حقوق محفوظ است.©
+          </p>
+          <p class="footer__copy">طراحی با دقت، خلق با معنا</p>
+        </div>
+      </div>
+    </footer>
+    <!-- مودال موفقیت ارسال پیام -->
+    <div class="success-modal" id="successModal" hidden>
+      <div class="success-modal__overlay" data-close-modal></div>
+
+      <div
+        class="success-modal__box"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="successModalTitle"
+      >
+        <button
+          type="button"
+          class="success-modal__close"
+          data-close-modal
+          aria-label="بستن"
+        >
+          &times;
+        </button>
+
+        <div class="success-modal__icon">
+          <img src="images/success-check.png" alt="" />
+        </div>
+
+        <p class="success-modal__text" id="successModalTitle">
+          با تشکر<br />
+          پیام با موفقیت ارسال شد.
+        </p>
+
+        <button type="button" class="success-modal__btn" data-close-modal>
+          باشه
+        </button>
+      </div>
+    </div>
+    <!-- مودال خطای ارسال -->
+    <div class="success-modal error-modal" id="errorModal" hidden>
+      <div class="success-modal__overlay" data-close-modal></div>
+
+      <div
+        class="success-modal__box"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="errorModalTitle"
+      >
+        <button
+          type="button"
+          class="success-modal__close"
+          data-close-modal
+          aria-label="بستن"
+        >
+          &times;
+        </button>
+
+        <div class="success-modal__icon">
+          <img src="images/error-icon.png" alt="" />
+        </div>
+
+        <p class="success-modal__text" id="errorModalTitle">
+          متاسفانه پیام ارسال نشد.
+        </p>
+
+        <button
+          type="button"
+          class="success-modal__btn error-modal__btn"
+          data-close-modal
+        >
+          باشه
+        </button>
+      </div>
+    </div>
+
+    <script src="js/home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  </body>
+</html>

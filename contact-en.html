@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me | Mahdi Alagheband</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/design-system.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/hire.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+  </head>
+  <div class="scroll-indicator">
+    <div class="line-track">
+      <div class="line-fill"></div>
+    </div>
+    <span class="scroll-label">Scroll</span>
+  </div>
+  <body class="page-about page-contact">
+    <header class="header header--light">
+      <div class="container header__inner">
+        <button class="header__hamburger" id="hamburgerBtn" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+        <a href="home-en.html" class="header__logo">
+          <img src="images/logo-gold.png" alt="Mahdi Alagheband Logo" />
+        </a>
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li><a href="home-en.html" class="header__link">Home</a></li>
+            <li><a href="about-en.html" class="header__link">About Me</a></li>
+            <li><a href="works-en.html" class="header__link">Works</a></li>
+            <li>
+              <a href="contact-en.html" class="header__link active">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__actions">
+          <a href="hire-en.html" class="btn btn-primary header__btn">Hire Me</a>
+          <div class="header__lang">
+            <button class="lang-btn" id="langBtn" type="button">
+              FA
+              <span class="lang-btn__arrow">▾</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu__overlay" id="mobileOverlay"></div>
+      <div class="mobile-menu__panel">
+        <ul class="mobile-menu__list">
+          <li><a href="home-en.html" class="mobile-menu__link">Home</a></li>
+          <li>
+            <a href="about-en.html" class="mobile-menu__link">About Me</a>
+          </li>
+          <li><a href="works-en.html" class="mobile-menu__link">Works</a></li>
+          <li>
+            <a href="contact-en.html" class="mobile-menu__link">Contact</a>
+          </li>
+        </ul>
+        <div class="mobile-menu__actions">
+          <a href="hire-en.html" class="btn btn-primary">Hire Me</a>
+        </div>
+      </div>
+    </div>
+
+    <section class="about-hero contact-hero">
+      <div class="container about-hero__inner">
+        <div class="about-hero__title-block">
+          <h1 class="about-hero__title">Contact Me</h1>
+          <div class="about-hero__line"></div>
+          <nav class="about-hero__breadcrumb" aria-label="Breadcrumb">
+            <a href="home-en.html">Home</a>
+            <span> &gt; </span>
+            <span>contact</span>
+          </nav>
+          <a
+            href="mailto:alaghebandmahdi9@gmail.com"
+            class="contact-hero__email"
+          >
+            <img
+              src="images/icon-envelope.png"
+              alt=""
+              class="contact-hero__mail-icon"
+            />
+            <span>alaghebandmahdi9@gmail.com</span>
+          </a>
+        </div>
+        <div class="about-hero__graphic">
+          <img
+            src="images/contact-hero-graphic.png"
+            alt=""
+            class="about-hero__img"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-body">
+      <div class="container contact-body__inner">
+        <aside class="contact-social">
+          <h2 class="contact-social__title">prefer socials ?</h2>
+
+          <a
+            href="https://www.linkedin.com/in/mahdi-alagheband-359581420"
+            class="contact-social__item"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="images/icon-linkedin.png"
+              alt=""
+              class="contact-social__icon"
+            />
+            <span class="contact-social__name">linkedin</span>
+          </a>
+          <span class="contact-social__line"></span>
+
+          <a
+            href="https://www.behance.net/mahdialagheband"
+            class="contact-social__item"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="images/icon-behance.png"
+              alt=""
+              class="contact-social__icon"
+            />
+            <span class="contact-social__name">behance</span>
+          </a>
+          <span class="contact-social__line"></span>
+
+          <a
+            href="https://www.instagram.com/mahdialagheband"
+            class="contact-social__item"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="images/icon-instagram.png"
+              alt=""
+              class="contact-social__icon"
+            />
+            <span class="contact-social__name">instagram</span>
+          </a>
+
+          <div class="contact-deco" aria-hidden="true"></div>
+        </aside>
+
+        <div class="contact-form-wrap">
+          <h2 class="contact-form__title">Get in touch</h2>
+
+          <form
+            class="hire-form contact-form"
+            action="#"
+            method="post"
+            novalidate
+          >
+            <div class="hire-form__group">
+              <label for="fullName">Full name <span>*</span></label>
+              <div class="hire-input-wrap">
+                <input
+                  type="text"
+                  id="fullName"
+                  name="fullName"
+                  placeholder="Mahdi Alagheband"
+                  required
+                />
+                <span class="hire-input-error-icon">!</span>
+              </div>
+              <p class="hire-input-error-text">This field is required !</p>
+            </div>
+
+            <div class="hire-form__group">
+              <label for="email">Email <span>*</span></label>
+              <div class="hire-input-wrap">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="you@email.com"
+                  required
+                />
+                <span class="hire-input-error-icon">!</span>
+              </div>
+              <p class="hire-input-error-text">This field is required !</p>
+            </div>
+
+            <div class="hire-form__group">
+              <label for="subject">Subject</label>
+              <div class="hire-input-wrap">
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="what is in your mind ?"
+                />
+              </div>
+            </div>
+
+            <div class="hire-form__group hire-form__group--full">
+              <label for="message">Your message</label>
+              <div class="hire-input-wrap">
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Briefly describe your idea or question...."
+                ></textarea>
+              </div>
+            </div>
+            <div class="hire-form__group hire-form__privacy">
+              <label class="privacy-check">
+                <input type="checkbox" name="privacy" id="privacy" required />
+                <span>
+                  I have read and agree to the
+                  <a href="privacy-en.html" target="_blank" rel="noopener"
+                    >privacy policy</a
+                  >.
+                </span>
+              </label>
+              <p class="hire-input-error-text">This field is required !</p>
+            </div>
+
+            <button
+              type="submit"
+              class="btn btn-primary hire-form__submit contact-form__submit"
+            >
+              Send message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <div class="success-modal" id="successModal" hidden>
+      <div class="success-modal__overlay" data-close-modal></div>
+      <div class="success-modal__box" role="dialog" aria-modal="true">
+        <button
+          type="button"
+          class="success-modal__close"
+          data-close-modal
+          aria-label="Close"
+        >
+          &times;
+        </button>
+        <div class="success-modal__icon">
+          <img src="images/success-check.png" alt="" />
+        </div>
+        <p class="success-modal__text">
+          Thank you<br />
+          Your message was sent successfully.
+        </p>
+        <button type="button" class="success-modal__btn" data-close-modal>
+          OK
+        </button>
+      </div>
+    </div>
+
+    <div class="success-modal error-modal" id="errorModal" hidden>
+      <div class="success-modal__overlay" data-close-modal></div>
+      <div class="success-modal__box" role="dialog" aria-modal="true">
+        <button
+          type="button"
+          class="success-modal__close"
+          data-close-modal
+          aria-label="Close"
+        >
+          &times;
+        </button>
+        <div class="success-modal__icon">
+          <img src="images/error-icon.png" alt="" />
+        </div>
+        <p class="success-modal__text">Sorry, the message could not be sent.</p>
+        <button
+          type="button"
+          class="success-modal__btn error-modal__btn"
+          data-close-modal
+        >
+          OK
+        </button>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <img src="images/logo.png" alt="Logo" class="footer__logo" />
+          <div class="footer__brand-text">
+            <h3 class="footer__name">Mahdi Alagheband</h3>
+            <p class="footer__role">UI/UX & Logo Designer</p>
+          </div>
+        </div>
+
+        <div class="footer__cta">
+          <p class="footer__cta-text">
+            For new projects or team and freelance<br />
+            collaborations, get in touch<br />
+            with me.
+          </p>
+          <a href="#" class="btn btn-primary footer__btn">Hire Me</a>
+        </div>
+
+        <div class="footer__contact">
+          <a
+            href="mailto:alaghebandmahdi9@gmail.com"
+            class="footer__contact-item"
+          >
+            <span>alaghebandmahdi9@gmail.com</span>
+            <span class="footer__icon">✉</span>
+          </a>
+          <a href="tel:+989120758032" class="footer__contact-item">
+            <span>+989120758032</span>
+            <span class="footer__icon">☎</span>
+          </a>
+          <div class="footer__contact-item">
+            <span>Tehran, Iran</span>
+            <span class="footer__icon"> 📍</span>
+          </div>
+          <div class="footer__socials">
+            <a
+              href="https://instagram.com/mahdialagheband"
+              class="footer__social"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <img src="images/icon-instagram-footer.png" alt="Instagram" />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/mahdi-alagheband-359581420"
+              class="footer__social"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <img src="images/icon-linkedin-footer.png" alt="LinkedIn" />
+            </a>
+            <a
+              href="https://dribbble.com/mahdi-alagheband"
+              class="footer__social"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Dribbble"
+            >
+              <img src="images/icon-dribbble-footer.png" alt="Dribbble" />
+            </a>
+            <a
+              href="https://www.behance.net/mahdialagheband"
+              class="footer__social"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Behance"
+            >
+              <img src="images/icon-behance-footer.png" alt="Behance" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="container footer__bottom-inner">
+          <div class="footer__legal">
+            <a href="privacy-en.html">Privacy Policy</a>
+            <span> | </span>
+            <a href="terms-en.html">Terms and Conditions</a>
+          </div>
+          <p class="footer__copy">© 2026. All rights reserved.</p>
+          <p class="footer__rights">
+            Designed and built with ❤️ by Mahdi Alagheband
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="js/home.js"></script>
+  </body>
+</html>

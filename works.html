@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>نمونه کارها | مهدی علاقه‌بند</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/design-system.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/works.css" />
+  </head>
+  <div class="scroll-indicator">
+    <div class="line-track">
+      <div class="line-fill"></div>
+    </div>
+    <span class="scroll-label">Scroll</span>
+  </div>
+  <body class="page-about page-works">
+    <!-- هدر روشن –  -->
+    <header class="header header--light">
+      <div class="container header__inner">
+        <button class="header__hamburger" id="hamburgerBtn" aria-label="منو">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <a href="home.html" class="header__logo">
+          <img src="images/logo-gold.png" alt="لوگو مهدی علاقه‌بند" />
+        </a>
+
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li><a href="home.html" class="header__link">خانه</a></li>
+            <li><a href="about.html" class="header__link">درباره من</a></li>
+            <li>
+              <a href="works.html" class="header__link active">نمونه کارها</a>
+            </li>
+            <li><a href="contact.html" class="header__link">تماس با من</a></li>
+          </ul>
+        </nav>
+
+        <div class="header__actions">
+          <a href="hire.html" class="btn btn-primary header__btn">استخدام من</a>
+          <div class="header__lang">
+            <button class="lang-btn" id="langBtn" type="button">
+              EN
+              <span class="lang-btn__arrow">▾</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- منوی موبایل -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu__overlay" id="mobileOverlay"></div>
+      <div class="mobile-menu__panel">
+        <ul class="mobile-menu__list">
+          <li><a href="home.html" class="mobile-menu__link">خانه</a></li>
+          <li><a href="about.html" class="mobile-menu__link">درباره من</a></li>
+          <li>
+            <a href="works.html" class="mobile-menu__link">نمونه کارها</a>
+          </li>
+          <li>
+            <a href="contact.html" class="mobile-menu__link">تماس با من</a>
+          </li>
+        </ul>
+        <div class="mobile-menu__actions">
+          <a href="hire.html" class="btn btn-primary">استخدام من</a>
+        </div>
+      </div>
+    </div>
+
+    <section class="about-hero">
+      <div class="container about-hero__inner">
+        <!-- عنوان (در RTL سمت راست) -->
+        <div class="about-hero__title-block">
+          <h1 class="about-hero__title">نمونه کارها</h1>
+          <div class="about-hero__line"></div>
+          <nav class="about-hero__breadcrumb" aria-label="مسیر صفحه">
+            <a href="home.html">خانه</a>
+            <span> > </span>
+            <span>نمونه کارها</span>
+          </nav>
+        </div>
+
+        <!-- عکس گرافیکی (در RTL سمت چپ) -->
+        <div class="about-hero__graphic">
+          <img
+            src="images/works-hero-graphic.png"
+            alt=""
+            class="about-hero__img"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- ========== فیلتر + کارت‌ها ========== -->
+    <section class="works-page section-light">
+      <div class="container">
+        <!-- فیلتر عنوان‌ها -->
+        <div class="works-filter" role="tablist">
+          <button
+            type="button"
+            class="works-filter__btn is-active"
+            data-filter="all"
+          >
+            همه پروژه‌ها
+          </button>
+          <button type="button" class="works-filter__btn" data-filter="site">
+            سایت
+          </button>
+          <button
+            type="button"
+            class="works-filter__btn"
+            data-filter="illustration"
+          >
+            تصویرسازی
+          </button>
+          <button type="button" class="works-filter__btn" data-filter="logo">
+            لوگو
+          </button>
+          <button
+            type="button"
+            class="works-filter__btn"
+            data-filter="magazine"
+          >
+            مجله
+          </button>
+          <button
+            type="button"
+            class="works-filter__btn"
+            data-filter="typography"
+          >
+            تایپوگرافی
+          </button>
+        </div>
+
+        <!-- گرید کارت‌ها -->
+        <div class="works-masonry">
+          <a href="project-magazine.html?from=works" class="works-item-link">
+            <article
+              class="card card-work works-item"
+              data-category="magazine"
+              data-bar="gold"
+            >
+              <div class="card-work__image works-item--wide">
+                <img
+                  src="images/work-magazine-sargarmi.jpg"
+                  alt="مجله سرگرمی"
+                  class="work-image"
+                />
+                <span class="work-top-bar"></span>
+              </div>
+              <div class="card-work__label">
+                <span class="work-category">مجله</span>
+                <span class="work-name">سرگرمی</span>
+                <div class="work-link"><span>مشاهده پروژه ←</span></div>
+              </div>
+            </article>
+          </a>
+          <a href="project-sorena.html?from=works" class="works-item-link">
+            <article
+              class="card card-work works-item span-tall"
+              data-category="illustration"
+              data-bar="mint"
+            >
+              <div class="card-work__image works-item--tall">
+                <img
+                  src="images/work-illustration-sorena.png"
+                  alt="تصویرسازی سورنا"
+                  class="work-image"
+                />
+                <span class="work-top-bar"></span>
+              </div>
+              <div class="card-work__label">
+                <span class="work-category">تصویرسازی</span>
+                <span class="work-name">سورنا</span>
+                <div class="work-link"><span>مشاهده پروژه ←</span></div>
+              </div>
+            </article>
+          </a>
+          <a href="project-chobkadeh.html?from=works" class="works-item-link">
+            <article
+              class="card card-work works-item"
+              data-category="logo"
+              data-bar="purple"
+            >
+              <div class="card-work__image">
+                <img
+                  src="images/work-2.jpg"
+                  alt="لوگو چوبکده"
+                  class="work-image"
+                />
+                <span class="work-top-bar"></span>
+              </div>
+              <div class="card-work__label">
+                <span class="work-category">لوگو</span>
+                <span class="work-name">چوبکده</span>
+                <div class="work-link"><span>مشاهده پروژه ←</span></div>
+              </div>
+            </article>
+          </a>
+          <a href="project-aftab.html?from=works" class="works-item-link">
+            <article
+              class="card card-work works-item"
+              data-category="logo"
+              data-bar="coral"
+            >
+              <div class="card-work__image">
+                <img
+                  src="images/work-1.jpg"
+                  alt="لوگو آفتاب"
+                  class="work-image"
+                />
+                <span class="work-top-bar"></span>
+              </div>
+              <div class="card-work__label">
+                <span class="work-category">لوگو</span>
+                <span class="work-name">آفتاب</span>
+                <div class="work-link"><span>مشاهده پروژه ←</span></div>
+              </div>
+            </article>
+          </a>
+          <a href="project-site.html?from=works" class="works-item-link">
+            <article
+              class="card card-work works-item span-wide"
+              data-category="site"
+              data-bar="blue"
+            >
+              <div class="card-work__image works-item--wide">
+                <img
+                  src="images/work-site-personal.png"
+                  alt="سایت شخصی طراح"
+                  class="work-image"
+                />
+                <span class="work-top-bar"></span>
+              </div>
+              <div class="card-work__label">
+                <span class="work-category">سایت</span>
+                <span class="work-name">شخصی (طراح)</span>
+                <div class="work-link"><span>مشاهده پروژه ←</span></div>
+              </div>
+            </article>
+          </a>
+          <a href="project-hess.html?from=works" class="works-item-link">
+            <article
+              class="card card-work works-item"
+              data-category="logo"
+              data-bar="orange"
+            >
+              <div class="card-work__image">
+                <img
+                  src="images/work-logo-hess.png"
+                  alt="لوگو حس خوب"
+                  class="work-image"
+                />
+                <span class="work-top-bar"></span>
+              </div>
+              <div class="card-work__label">
+                <span class="work-category">لوگو</span>
+                <span class="work-name">حس خوب</span>
+                <div class="work-link"><span>مشاهده پروژه ←</span></div>
+              </div>
+            </article>
+          </a>
+          <a href="project-typography.html?from=works" class="works-item-link">
+            <article
+              class="card card-work works-item"
+              data-category="typography"
+              data-bar="teal"
+            >
+              <div class="card-work__image">
+                <img
+                  src="images/work-typography.png"
+                  alt="تایپوگرافی"
+                  class="work-image"
+                />
+                <span class="work-top-bar"></span>
+              </div>
+              <div class="card-work__label">
+                <span class="work-category">تایپوگرافی</span>
+                <span class="work-name">تایپوگرافی</span>
+                <div class="work-link"><span>مشاهده پروژه ←</span></div>
+              </div>
+            </article>
+          </a>
+          <a href="project-daruit.html?from=works" class="works-item-link">
+            <article
+              class="card card-work works-item span-tall"
+              data-category="illustration"
+              data-bar="pink"
+            >
+              <div class="card-work__image">
+                <img
+                  src="images/work-3.jpg"
+                  alt="تصویرسازی دارویت"
+                  class="work-image"
+                />
+                <span class="work-top-bar"></span>
+              </div>
+              <div class="card-work__label">
+                <span class="work-category">تصویرسازی</span>
+                <span class="work-name">دارویت</span>
+                <div class="work-link"><span>مشاهده پروژه ←</span></div>
+              </div>
+            </article>
+          </a>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container footer__inner">
+        <!-- سمت راست: لوگو و معرفی -->
+        <div class="footer__brand">
+          <img src="images/logo.png" alt="لوگو" class="footer__logo" />
+          <div class="footer__brand-text">
+            <h3 class="footer__name">مهدی علاقه‌بند</h3>
+            <p class="footer__role">طراح UI/UX و طراح لوگو</p>
+          </div>
+        </div>
+
+        <!-- وسط: متن دعوت به همکاری -->
+        <div class="footer__cta">
+          <p class="footer__cta-text">
+            برای پروژه‌های جدید یا همکاری‌های<br />
+            تیمی و فریلنسری، با من<br />
+            در ارتباط باشید.
+          </p>
+          <a href="hire.html" class="btn btn-primary footer__btn">استخدام من</a>
+        </div>
+
+        <!-- سمت چپ: اطلاعات تماس -->
+        <div class="footer__contact">
+          <a
+            href="mailto:alaghebandmahdi9@gmail.com"
+            class="footer__contact-item"
+          >
+            <span>alaghebandmahdi9@gmail.com</span>
+            <span class="footer__icon">✉</span>
+          </a>
+          <a href="tel:09120758032" class="footer__contact-item">
+            <span>09120758032</span>
+            <span class="footer__icon">☎</span>
+          </a>
+          <div class="footer__contact-item">
+            <span>تهران، ایران</span>
+            <span class="footer__icon"> 📍</span>
+          </div>
+          <div class="footer__socials">
+            <a
+              href="https://instagram.com/mahdialagheband"
+              class="footer__social"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <img src="images/icon-instagram-footer.png" alt="Instagram" />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/mahdi-alagheband-359581420"
+              class="footer__social"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <img src="images/icon-linkedin-footer.png" alt="LinkedIn" />
+            </a>
+            <a
+              href="https://dribbble.com/mahdi-alagheband"
+              class="footer__social"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Dribbble"
+            >
+              <img src="images/icon-dribbble-footer.png" alt="Dribbble" />
+            </a>
+            <a
+              href="https://www.behance.net/mahdialagheband"
+              class="footer__social"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Behance"
+            >
+              <img src="images/icon-behance-footer.png" alt="Behance" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- خط پایین فوتر -->
+      <div class="footer__bottom">
+        <div class="container footer__bottom-inner">
+          <div class="footer__legal">
+            <a href="privacy.html">حریم خصوصی</a>
+            <span> | </span>
+            <a href="terms.html">شرایط استفاده</a>
+          </div>
+          <p class="footer__rights">
+            .۱۴۰۵ مهدی علاقه‌بند. تمامی حقوق محفوظ است.©
+          </p>
+          <p class="footer__copy">طراحی با دقت، خلق با معنا</p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/home.js"></script>
+  </body>
+</html>
