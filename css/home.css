@@ -1334,13 +1334,16 @@ html[lang="en"] .footer__logo {
   justify-content: center;
   width: 36px;
   height: 36px;
-  flex-shrink: 0;
+  cursor: pointer;
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
 }
 
 .footer__social img {
   display: block;
-  width: 22px;
-  height: 22px;
+  width: 50px;
+  height: 50px;
   object-fit: contain;
 }
 
