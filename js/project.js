@@ -62,5 +62,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
-const isEn = document.documentElement.lang === "en";
-const url = isEn ? p.url.replace(".html", "-en.html") : p.url;

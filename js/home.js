@@ -1,4 +1,4 @@
-// جاوااسکریپت صفحه اصلی (تغییر زبان، منوی موبایل و ...)document.addEventListener("DOMContentLoaded", ()
+// جاوااسکریپت صفحه اصلی (تغییر زبان، منوی موبایل و ...)
 document.addEventListener("DOMContentLoaded", () => {
   const langBtn = document.getElementById("langBtn");
   if (langBtn) {
