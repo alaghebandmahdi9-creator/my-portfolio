@@ -328,20 +328,35 @@ html[lang="en"] .about-quote blockquote::after {
     gap: 30px;
   }
 
-  .about-hero__title-block {
+  .about-hero__title-block,
+  html[lang="fa"] .about-hero__title-block,
+  html[lang="FA"] .about-hero__title-block,
+  html[lang="en"] .about-hero__title-block,
+  html[lang="EN"] .about-hero__title-block {
     padding-top: 20px;
     padding-left: 0;
     padding-right: 0;
     text-align: center;
     order: 1;
+    width: 100%;
   }
 
   .about-hero__graphic {
     order: 2 !important;
   }
 
-  .about-hero__line {
-    margin: 0 auto 12px;
+  .about-hero__line,
+  html[lang="fa"] .about-hero__line,
+  html[lang="FA"] .about-hero__line,
+  html[lang="en"] .about-hero__line,
+  html[lang="EN"] .about-hero__line,
+  :lang(fa) .about-hero__line,
+  :lang(en) .about-hero__line {
+    display: block !important;
+    width: 174px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: 12px;
   }
 
   .about-bio__inner {

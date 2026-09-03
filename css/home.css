@@ -449,6 +449,11 @@ html[lang="en"] .scroll-indicator {
   text-transform: uppercase;
   writing-mode: vertical-rl;
 }
+@media (max-width: 640px) {
+  .page-home .scroll-indicator {
+    transform: translateY(20px);
+  }
+}
 
 @keyframes scrollPulse {
   0% {
