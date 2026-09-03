@@ -1,10 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fa" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>درباره من | مهدی علاقه‌بند</title>
-
+    <meta
+      name="description"
+      content="آشنایی با مهدی علاقه‌بند، طراح UI/UX و لوگو. مسیر کاری، مهارت‌ها و رویکرد طراحی."
+    />
+    <link rel="icon" href="favicon.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,14 +20,14 @@
     <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="css/about.css" />
   </head>
-  
+
   <body class="page-about">
     <div class="scroll-indicator">
-    <div class="line-track">
-      <div class="line-fill"></div>
+      <div class="line-track">
+        <div class="line-fill"></div>
+      </div>
+      <span class="scroll-label">Scroll</span>
     </div>
-    <span class="scroll-label">Scroll</span>
-  </div>
     <!-- ========== هدر (نسخه روشن) ========== -->
     <header class="header header--light">
       <div class="container header__inner">
@@ -40,7 +44,9 @@
         <nav class="header__nav">
           <ul class="header__menu">
             <li><a href="home.html" class="header__link">خانه</a></li>
-            <li><a href="about.html" class="header__link active">درباره من</a></li>
+            <li>
+              <a href="about.html" class="header__link active">درباره من</a>
+            </li>
             <li><a href="works.html" class="header__link">نمونه کارها</a></li>
             <li><a href="contact.html" class="header__link">تماس با من</a></li>
           </ul>
@@ -65,8 +71,12 @@
         <ul class="mobile-menu__list">
           <li><a href="home.html" class="mobile-menu__link">خانه</a></li>
           <li><a href="about.html" class="mobile-menu__link">درباره من</a></li>
-          <li><a href="works.html" class="mobile-menu__link">نمونه کارها</a></li>
-          <li><a href="contact.html" class="mobile-menu__link">تماس با من</a></li>
+          <li>
+            <a href="works.html" class="mobile-menu__link">نمونه کارها</a>
+          </li>
+          <li>
+            <a href="contact.html" class="mobile-menu__link">تماس با من</a>
+          </li>
         </ul>
         <div class="mobile-menu__actions">
           <a href="hire.html" class="btn btn-primary">استخدام من</a>
@@ -77,24 +87,25 @@
     <!-- ========== هیرو درباره من ========== -->
     <section class="about-hero">
       <div class="container about-hero__inner">
-
         <!-- عنوان (سمت راست  ) -->
         <div class="about-hero__title-block">
           <h1 class="about-hero__title">درباره من</h1>
           <div class="about-hero__line"></div>
           <nav class="about-hero__breadcrumb" aria-label="مسیر صفحه">
             <a href="home.html">خانه</a>
-            <span> >
-               </span>
+            <span> > </span>
             <span>درباره من</span>
           </nav>
         </div>
 
         <!-- عکس گرافیکی RTL -->
         <div class="about-hero__graphic">
-          <img src="images/about-hero-graphic.png" alt="" class="about-hero__img" />
+          <img
+            src="images/about-hero-graphic.png"
+            alt=""
+            class="about-hero__img"
+          />
         </div>
-
       </div>
     </section>
 
@@ -106,11 +117,11 @@
         </div>
         <div class="about-bio__text">
           <p>
-            از سال ۱۴۰۳ فعالیت خود را به عنوان گرافیک دیزاینر آغاز کردم. یادگیری من از
-            حوزه زبان‌های برنامه‌نویسی شروع شد و پس از آن به صورت تخصصی به حوزه
-            طراحی وب‌سایت، رابط و تجربه کاربری، طراحی لوگو و تصویرسازی ادامه دادم.
-            سایت پیش روی شما، از طراحی اولیه تا نمونه‌های ابتدایی و کدنویسی و توسعه
-            تماماً توسط خودم انجام شده است.
+            از سال ۱۴۰۳ فعالیت خود را به عنوان گرافیک دیزاینر آغاز کردم. یادگیری
+            من از حوزه زبان‌های برنامه‌نویسی شروع شد و پس از آن به صورت تخصصی به
+            حوزه طراحی وب‌سایت، رابط و تجربه کاربری، طراحی لوگو و تصویرسازی
+            ادامه دادم. سایت پیش روی شما، از طراحی اولیه تا نمونه‌های ابتدایی و
+            کدنویسی و توسعه تماماً توسط خودم انجام شده است.
           </p>
           <p>
             تمرکز من بر طراحی هویت بصری، لوگو،وب‌سایت وطراحی کتاب و مجلات است.
@@ -145,48 +156,50 @@
     <section class="about-quote">
       <div class="container">
         <blockquote>
-           من تجربه‌ای طراحی می‌کنم که الهام‌بخش و کارآمد است.
+          من تجربه‌ای طراحی می‌کنم که الهام‌بخش و کارآمد است.
         </blockquote>
       </div>
     </section>
 
     <footer class="footer">
-    <div class="container footer__inner">
-
-      <!-- سمت راست: لوگو و معرفی -->
-      <div class="footer__brand">
-        <img src="images/logo.png" alt="لوگو" class="footer__logo">
-        <div class="footer__brand-text">
-          <h3 class="footer__name">مهدی علاقه‌بند</h3>
-          <p class="footer__role">طراح UI/UX و طراح لوگو</p>
+      <div class="container footer__inner">
+        <!-- سمت راست: لوگو و معرفی -->
+        <div class="footer__brand">
+          <img src="images/logo.png" alt="لوگو" class="footer__logo" />
+          <div class="footer__brand-text">
+            <h3 class="footer__name">مهدی علاقه‌بند</h3>
+            <p class="footer__role">طراح UI/UX و طراح لوگو</p>
+          </div>
         </div>
-      </div>
 
-      <!-- وسط: متن دعوت به همکاری -->
-      <div class="footer__cta">
-        <p class="footer__cta-text">
-          برای پروژه‌های جدید یا همکاری‌های<br>
-          تیمی و فریلنسری، با من<br>
-          در ارتباط باشید.
-        </p>
-        <a href="hire.html" class="btn btn-primary footer__btn">استخدام من</a>
-      </div>
-
-      <!-- سمت چپ: اطلاعات تماس -->
-      <div class="footer__contact">
-        <a href="mailto:alaghebandmahdi9@gmail.com" class="footer__contact-item">
-          <span>alaghebandmahdi9@gmail.com</span>
-          <span class="footer__icon">✉</span>
-        </a>
-        <a href="tel:09120758032" class="footer__contact-item">
-          <span>09120758032</span>
-          <span class="footer__icon">☎</span>
-        </a>
-        <div class="footer__contact-item">
-          <span>تهران، ایران</span>
-          <span class="footer__icon"> 📍</span>
+        <!-- وسط: متن دعوت به همکاری -->
+        <div class="footer__cta">
+          <p class="footer__cta-text">
+            برای پروژه‌های جدید یا همکاری‌های<br />
+            تیمی و فریلنسری، با من<br />
+            در ارتباط باشید.
+          </p>
+          <a href="hire.html" class="btn btn-primary footer__btn">استخدام من</a>
         </div>
-        <div class="footer__socials">
+
+        <!-- سمت چپ: اطلاعات تماس -->
+        <div class="footer__contact">
+          <a
+            href="mailto:alaghebandmahdi9@gmail.com"
+            class="footer__contact-item"
+          >
+            <span>alaghebandmahdi9@gmail.com</span>
+            <span class="footer__icon">✉</span>
+          </a>
+          <a href="tel:09120758032" class="footer__contact-item">
+            <span>09120758032</span>
+            <span class="footer__icon">☎</span>
+          </a>
+          <div class="footer__contact-item">
+            <span>تهران، ایران</span>
+            <span class="footer__icon"> 📍</span>
+          </div>
+          <div class="footer__socials">
             <a
               href="https://instagram.com/mahdialagheband"
               class="footer__social"
@@ -225,23 +238,24 @@
               <img src="images/icon-behance-footer.png" alt="Behance" />
             </a>
           </div>
+        </div>
       </div>
-    </div>
-    
 
-        <!-- خط پایین فوتر -->
-    <div class="footer__bottom">
-      <div class="container footer__bottom-inner">
-        <div class="footer__legal">
-           <a href="privacy.html">حریم خصوصی</a>
-           <span> | </span>
+      <!-- خط پایین فوتر -->
+      <div class="footer__bottom">
+        <div class="container footer__bottom-inner">
+          <div class="footer__legal">
+            <a href="privacy.html">حریم خصوصی</a>
+            <span> | </span>
             <a href="terms.html">شرایط استفاده</a>
-            </div>
-        <p class="footer__rights"> .۱۴۰۵ مهدی علاقه‌بند. تمامی حقوق محفوظ است.©</p>
-        <p class="footer__copy">طراحی با دقت، خلق با معنا</p>
+          </div>
+          <p class="footer__rights">
+            .۱۴۰۵ مهدی علاقه‌بند. تمامی حقوق محفوظ است.©
+          </p>
+          <p class="footer__copy">طراحی با دقت، خلق با معنا</p>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
     <script src="js/home.js"></script>
   </body>
 </html>
